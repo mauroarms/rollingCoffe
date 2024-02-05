@@ -1,0 +1,12 @@
+#root{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contenidoPrincipal{
+  flex-grow: 1;
+}
+.banner{
+  width: 100vw;
+  height: 450px;
+}
