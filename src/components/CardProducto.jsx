@@ -1,13 +1,15 @@
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import "../css/cardProducto.css"
 
-const CardProducto = () => {
+const CardProducto = ({imagen}) => {
   return (
     <Card className="cardProducto">
       <Card.Img
+        className="imgCard"
         variant="top"
-        src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cheat-menu-saudi/products/cappuchino-Cappuccino_-_12Oz.jpg"
+        src={imagen}
       />
       <Card.Body className="d-flex flex-column justify-content-between">
         <Container>
@@ -21,7 +23,6 @@ const CardProducto = () => {
         </Container>
         
         <Card.Footer className="footerProducto">
-        
           <Card.Text>
             <strong>
               Precio: <br />
