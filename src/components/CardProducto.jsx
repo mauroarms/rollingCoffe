@@ -23,13 +23,13 @@ const CardProducto = ({imagen}) => {
         </Container>
         
         <Card.Footer className="footerProducto">
-          <Card.Text>
+          <Card.Text className="my-auto">
             <strong>
               Precio: <br />
             </strong>
             $1200
           </Card.Text>
-          <Button className="btnProducto" variant="success">
+          <Button className="btnPrincipal ms-auto my-auto" variant="success">
             Ver
           </Button>
         </Card.Footer>
@@ -37,5 +37,7 @@ const CardProducto = ({imagen}) => {
     </Card>
   );
 };
+
+//   margin: auto 0 10px auto;
 
 export default CardProducto;

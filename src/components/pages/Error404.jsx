@@ -1,9 +1,15 @@
+import { Button, Container } from "react-bootstrap";
+import error404 from "../../assets/error404.png";
+
 const Error404 = () => {
-    return (
-        <div>
-            <h1>Soy el Error 404</h1>
-        </div>
-    );
+  return (
+    <Container className="d-flex align-items-center flex-column">
+      <img src={error404} alt="" />
+      <Button className="btnPrincipal" variant="success">
+        Volver
+      </Button>
+    </Container>
+  );
 };
 
 export default Error404;

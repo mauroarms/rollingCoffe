@@ -15,8 +15,8 @@ function App() {
 
       <section className="contenidoPrincipal">
         {/* <Index></Index> */}
-        <Administrador></Administrador>
-        {/* <Error404></Error404> */}
+        {/* <Administrador></Administrador> */}
+        <Error404></Error404>
       </section>
 
       <Footer />
