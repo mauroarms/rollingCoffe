@@ -1,10 +1,17 @@
 import React from 'react';
+import CardProducto from './CardProducto';
 
 const Productos = () => {
     return (
-        <div>
-            <h3>Soy productos</h3>
-        </div>
+        <section className='grillaProductos'>
+            <CardProducto className="col-lg-4 col-md-6 col-sm-12"/>
+            <CardProducto className="col-lg-4 col-md-6 col-sm-12"/>
+            <CardProducto className="col-lg-4 col-md-6 col-sm-12"/>
+            <CardProducto className="col-lg-4 col-md-6 col-sm-12"/>
+            <CardProducto className="col-lg-4 col-md-6 col-sm-12"/>
+            <CardProducto className="col-lg-4 col-md-6 col-sm-12"/>
+            
+        </section>
     );
 };
 

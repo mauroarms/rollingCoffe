@@ -6,8 +6,9 @@ const Index = () => {
   return (
     <div>
       <Banner />
-
-      <Container className="contenidoPrincipal">
+      <Container>
+        <h1 className="mt-4 display-5">Nuestros Productos</h1>
+        <hr />
         <Productos></Productos>
       </Container>
     </div>
