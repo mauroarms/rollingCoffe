@@ -1,27 +1,31 @@
-#root{
+#root {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.contenidoPrincipal{
+.contenidoPrincipal {
   flex-grow: 1;
 }
-footer{
+footer {
   background-color: #003c25;
 }
-.banner{
+.banner {
   width: 100%;
   height: 450px;
 }
 .btnPrincipal {
-  background-image: linear-gradient(to right, #093028 0%, #237A57  51%, #093028  100%);
-
+  background-image: linear-gradient(
+    to right,
+    #093028 0%,
+    #237a57 51%,
+    #093028 100%
+  );
   padding: 8px 35px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
@@ -31,4 +35,3 @@ footer{
   color: #fff;
   text-decoration: none;
 }
-

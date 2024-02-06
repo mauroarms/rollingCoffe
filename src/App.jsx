@@ -14,9 +14,9 @@ function App() {
       <BarraNavegacion />
 
       <section className="contenidoPrincipal">
-        {/* <Index></Index> */}
+        <Index></Index>
         {/* <Administrador></Administrador> */}
-        <Error404></Error404>
+        {/* <Error404></Error404> */}
       </section>
 
       <Footer />
