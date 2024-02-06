@@ -1,0 +1,13 @@
+{
+    "productos":[
+        {
+            "id": "1",
+            "nombre" : "Café Americano",
+            "imagen" : "asfasf",
+            "descripcion" : "cafecito",
+            "precio" : 1200,
+            "categoria" : "Bebida caliente",
+            "stock" : true
+        }
+    ]
+}
