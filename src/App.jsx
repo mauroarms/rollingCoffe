@@ -22,6 +22,10 @@ function App() {
 
             {/* //www.rollingCoffe.com/admin */}
             <Route exact path="/admin" element={<Administrador />}></Route>
+            {/* //www.rollingCoffe.com/admin */}
+            <Route exact path="/admin/crear" element={<Administrador />}></Route>
+            {/* //www.rollingCoffe.com/admin */}
+            <Route exact path="/admin/eliminar" element={<Administrador />}></Route>
 
             {/* //www.rollingCoffe.com/ */}
             <Route path="*" element={<Error404/>}></Route>
