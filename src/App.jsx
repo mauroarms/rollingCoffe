@@ -7,6 +7,8 @@ import BarraNavegacion from "./components/common/BarraNavegacion";
 import Index from "./components/pages/Index";
 import Administrador from "./components/pages/Administrador";
 import Error404 from "./components/pages/Error404";
+import DetalleProducto from './components/pages/DetalleProducto';
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,34 +17,27 @@ function App() {
 
     <BrowserRouter>
       <BarraNavegacion />
-        <section className="contenidoPrincipal">
-          <Routes>
-            {/* //www.rollingCoffe.com/ */}
-            <Route exact path="/" element={<Index />}></Route>
+      <section className="contenidoPrincipal">
+        <Routes>
+          {/* //www.rollingCoffe.com/ */}
+          <Route exact path="/" element={<Index />}></Route>
 
-            {/* //www.rollingCoffe.com/admin */}
-            <Route exact path="/admin" element={<Administrador />}></Route>
-            {/* //www.rollingCoffe.com/admin */}
-            <Route exact path="/admin/crear" element={<Administrador />}></Route>
-            {/* //www.rollingCoffe.com/admin */}
-            <Route exact path="/admin/eliminar" element={<Administrador />}></Route>
+          {/* //www.rollingCoffe.com/admin */}
+          <Route exact path="/admin" element={<Administrador />}></Route>
+          {/* //www.rollingCoffe.com/admin */}
+          <Route exact path="/admin/crear" element={<Administrador />}></Route>
+          {/* //www.rollingCoffe.com/admin */}
+          <Route exact path="/admin/eliminar" element={<Administrador />}></Route>
+          {/* //www.rollingCoffe.com/admin */}
+          <Route exact path="/producto" element={<DetalleProducto />}></Route>
 
-            {/* //www.rollingCoffe.com/ */}
-            <Route path="*" element={<Error404/>}></Route>
-          </Routes>
-        </section>
+          {/* //www.rollingCoffe.com/ */}
+          <Route path="*" element={<Error404/>}></Route>
+        </Routes>
+      </section>
       <Footer />
     </BrowserRouter>
 
-    // {/* <BarraNavegacion />
-
-    // <section className="contenidoPrincipal">
-    //   <Index></Index>
-    //    Administrador></Administrador>
-    //   <Error404></Error404>
-    // </section>
-
-    // <Footer /> */}
   );
 }
 

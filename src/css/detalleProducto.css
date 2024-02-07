@@ -1,0 +1,71 @@
+.imgBackground {
+  position: absolute;
+
+  width: 100%;
+  max-height: 100%;
+}
+.backgroundProducto {
+  position: relative;
+}
+.backgroundProducto img {
+  width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  display: block;
+  height: 100vh;
+}
+.backgroundProducto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Color negro con 50% de opacidad */
+}
+
+.contenidoProducto {
+    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 80%; /* 25% más pequeño que el fondo de imagen */
+  height: 70%; /* 25% más pequeño que el fondo de imagen */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.image-section {
+  flex: 2;
+
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.content-section {
+  flex: 1;
+  padding: 15px 25px;
+}
+
+.content-section h1 {
+  margin: 0;
+  color: #003c25;
+}
+
+.content-section h6 {
+    color: grey;
+    text-decoration: underline;
+    margin: 0;
+ }
+
+
+.btnConteiner{
+    position: absolute;
+    bottom: 16px; /* Alinea el contenedor de botones en la parte inferior */
+    right: 16px;  
+}

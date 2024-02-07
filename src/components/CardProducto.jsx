@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../css/cardProducto.css"
+import { Link, NavLink } from 'react-router-dom';
 
 const CardProducto = ({imagen}) => {
   return (
@@ -29,7 +30,7 @@ const CardProducto = ({imagen}) => {
             </strong>
             $1200
           </Card.Text>
-          <Button className="btnPrincipal ms-auto my-auto" variant="success">
+          <Button className="btnPrincipal ms-auto my-auto" variant="success" as={Link} to="/producto">
             Ver
           </Button>
         </Card.Footer>
