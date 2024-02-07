@@ -29,7 +29,8 @@ const Producto = () => {
             <h1 className="display-6">Café Americano</h1>
 
             <div className="mt-0 mb-4">
-                <p>Precio: $1200</p>              
+                
+                <p> Precio: $1200</p>              
             </div>
             <div>
                 <strong>Descripción:</strong>
@@ -56,7 +57,7 @@ const Producto = () => {
         </div>
       </div>
       <Container>
-        <h1 className="mt-4 display-5">Nuestros Productos</h1>
+        <h1 className="mt-4 display-5">También te podría gustar...</h1>
         <hr />
         <Productos></Productos>
       </Container>

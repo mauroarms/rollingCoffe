@@ -12,6 +12,7 @@
 .footerProducto {
   background-color: #ffffff;
   display: flex;
+  padding: 5px;
 }
 
 .grillaProductos {
