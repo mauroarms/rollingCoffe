@@ -4,10 +4,32 @@
             "id": "1",
             "nombre" : "Café Americano",
             "imagen" : "asfasf",
-            "descripcion" : "cafecito",
+            "descripcion-breve" : "cafecito",
+            "descripcion-amplia" : "cafecito",
             "precio" : 1200,
             "categoria" : "Bebida caliente",
             "stock" : true
+        },
+        {
+            "id": "2",
+            "nombre" : "Cappuchino",
+            "imagen" : "asfasf",
+            "descripcion-breve" : "Cappuchino",
+            "descripcion-amplia" : "Cappuchino",
+            "precio" : 1500,
+            "categoria" : "Bebida caliente",
+            "stock" : true
+        }
+    ],
+    "usuarios":[
+        {
+            "id": "1",
+            "mail" : "mauro.armas14@gmail.com",
+            "pass" : "maurito1234",
+            "user" : "mauro_arms",
+            "type" : "admin"
+
         }
     ]
+
 }
