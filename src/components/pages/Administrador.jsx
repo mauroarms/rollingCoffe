@@ -42,12 +42,7 @@ const Administrador = () => {
         <Modal.Body>
           <FormularioProducto></FormularioProducto>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Cancelar
-          </Button>
-          <Button variant="success">Agregar</Button>
-        </Modal.Footer>
+
       </Modal>
     </>
   );
