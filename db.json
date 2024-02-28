@@ -4,21 +4,21 @@
             "id": "1",
             "nombre" : "Café Americano",
             "imagen" : "asfasf",
-            "descripcion-breve" : "cafecito",
-            "descripcion-amplia" : "cafecito",
+            "descripcionBreve" : "cafecito",
+            "descripcionAmplia" : "cafecito",
             "precio" : 1200,
             "categoria" : "Bebida caliente",
-            "stock" : true
+            "disponible" : true
         },
         {
             "id": "2",
             "nombre" : "Cappuchino",
             "imagen" : "asfasf",
-            "descripcion-breve" : "Cappuchino",
-            "descripcion-amplia" : "Cappuchino",
+            "descripcionBreve" : "Cappuchino",
+            "descripcionAmplia" : "Cappuchino",
             "precio" : 1500,
             "categoria" : "Bebida caliente",
-            "stock" : true
+            "disponible" : true
         }
     ],
     "usuarios":[

@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Container } from "react-bootstrap";
 import "../../css/detalleProducto.css";
 import { Link } from "react-router-dom";
-import Productos from "../Productos";
+import Productos from "../producto/Productos";
 
 const Producto = () => {
   return (

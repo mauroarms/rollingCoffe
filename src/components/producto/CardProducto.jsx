@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import "../css/cardProducto.css";
+import "../../css/cardProducto.css";
 import { Link, NavLink } from "react-router-dom";
 
 const CardProducto = ({ imagen }) => {

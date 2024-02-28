@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import Banner from "../Banner";
-import Productos from "../Productos";
+import Productos from "../producto/Productos";
 
 const Index = () => {
   return (
