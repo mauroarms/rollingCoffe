@@ -7,14 +7,25 @@ console.log(URI_Producto);
 export const crearProductoAPI = async (producto) => {
   try {
     const respuesta = await fetch(URI_Producto, {
-        method: "POST",
-        headers: {
-            "Content-Type" : "application/json"
-        },
-        body: JSON.stringify(producto)
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(producto),
     });
 
-    return respuesta
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+//GET
+export const obtenerListaProducto = async () => {
+  try {
+    const respuesta = await fetch(URI_Producto);
+    console.log(respuesta);
+    return respuesta;
   } catch (error) {
     console.log(error);
   }
