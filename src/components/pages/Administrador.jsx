@@ -2,27 +2,14 @@ import { Container, Button, Modal } from "react-bootstrap";
 import TablaAdministrador from "../TablaAdministrador";
 import { useEffect, useState } from "react";
 import FormularioProducto from "../producto/FormularioProducto";
-import { obtenerListaProducto } from "../../helpers/queries";
+
 
 const Administrador = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [productos, setProductos] = useState([]);
 
-  useEffect(() => {
-    obtenerProductos();
-  }, []);
-
-  const obtenerProductos = async () => {
-    const respuesta = await obtenerListaProducto();
-    if (respuesta.status === 200) {
-      const recetas = await respuesta.json();
-      setProductos(recetas);
-      console.log(recetas)
-    }
-  };
 
   return (
     <>

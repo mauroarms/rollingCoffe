@@ -2,13 +2,37 @@ import { Button } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { obtenerListaProducto } from "../helpers/queries";
+import { useEffect, useState } from "react";
 
 const TablaAdministrador = () => {
+
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    obtenerProductos();
+  }, []);
+
+  const obtenerProductos = async () => {
+    const respuesta = await obtenerListaProducto();
+    if (respuesta.status === 200) {
+      const productos = await respuesta.json();
+      setProductos(productos);
+      console.log(productos)
+    }else{
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Intentelo nuevamente más tarde",
+      });
+    }
+  };
+
   return (
     <Table striped bordered hover responsive>
       <thead>
         <tr>
-          <th>Cod</th>
+          <th></th>
           <th>Producto</th>
           <th>Precio</th>
           <th>URL de Imagen</th>
@@ -17,56 +41,33 @@ const TablaAdministrador = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Cappuchino</td>
-          <td>$1200</td>
-          <td className="d-flex">
-            <img
-              src="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cheat-menu-saudi/products/cappuchino-Cappuccino_-_12Oz.jpg"
-              alt=""
-              width={230}
-              height={150}
-              className="m-auto"
-            />
-          </td>
-          <td>Bebida Caliente</td>
-          <td>
-            <div className="d-flex flex-column mt-3 align-items-center">
-              <Button variant="warning">
-                <FontAwesomeIcon icon={faPenToSquare} />
-              </Button>
-              <Button variant="danger" className="mt-5">
-                <FontAwesomeIcon icon={faTrash} />
-              </Button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Café Americano</td>
-          <td>$1000</td>
-          <td className="d-flex">
-            <img
-              src="https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696"
-              alt=""
-              width={230}
-              height={150}
-              className="m-auto"
-            />
-          </td>
-          <td>Bebida Caliente</td>
-          <td>
-            <div className="d-flex flex-column mt-3 align-items-center">
-              <Button variant="warning">
-                <FontAwesomeIcon icon={faPenToSquare} />
-              </Button>
-              <Button variant="danger" className="mt-5">
-                <FontAwesomeIcon icon={faTrash} />
-              </Button>
-            </div>
-          </td>
-        </tr>
+        {productos.map((producto) => 
+          <tr key={producto.id}>
+            <td>{producto.id}</td>
+            <td>{producto.nombre}</td>
+            <td>${producto.precio}</td>
+            <td className="d-flex">
+              <img
+                src={producto.imagen}
+                alt=""
+                width={230}
+                height={150}
+                className="m-auto"
+              />
+            </td>
+            <td>{producto.categoria}</td>
+            <td>
+              <div className="d-flex flex-column mt-3 align-items-center">
+                <Button variant="warning">
+                  <FontAwesomeIcon icon={faPenToSquare} />
+                </Button>
+                <Button variant="danger" className="mt-5">
+                  <FontAwesomeIcon icon={faTrash} />
+                </Button>
+              </div>
+            </td>
+          </tr>
+        )}
       </tbody>
     </Table>
   );

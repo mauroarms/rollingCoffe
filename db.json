@@ -3,7 +3,7 @@
     {
       "id": "1",
       "nombre": "Café Americano",
-      "imagen": "asfasf",
+      "imagen": "https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696",
       "descripcionBreve": "cafecito",
       "descripcionAmplia": "cafecito",
       "precio": 1200,
@@ -13,7 +13,7 @@
     {
       "id": "2",
       "nombre": "Cappuchino",
-      "imagen": "asfasf",
+      "imagen": "https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cheat-menu-saudi/products/cappuchino-Cappuccino_-_12Oz.jpg",
       "descripcionBreve": "Cappuchino",
       "descripcionAmplia": "Cappuchino",
       "precio": 1500,
@@ -38,6 +38,16 @@
       "descripcionAmplia": "Chocolatada fria o caliente ",
       "categoria": "infusion",
       "precio": "200",
+      "disponible": false
+    },
+    {
+      "id": "24c2",
+      "nombre": "Frapuccino oreo",
+      "imagen": "https://totallythebomb.com/wp-content/uploads/2020/05/shutterstock_186240506-735x1103.jpg",
+      "descripcionBreve": "Bebida fria a base de oreo y leche",
+      "descripcionAmplia": "Un gustito dulce hecho con intenso sabor a chocolate, un toque de café y trocitos de galletas OREO®. Se mezcla con hielo y cubre a mano con crema batida ligera y unos trocitos más de galletas OREO® para que no falten. Disponible en tamaños pequeño, mediano y grande.",
+      "categoria": "Bebida Fria",
+      "precio": "5000",
       "disponible": false
     }
   ],

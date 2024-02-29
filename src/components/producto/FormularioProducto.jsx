@@ -128,10 +128,10 @@ const FormularioProducto = () => {
           })}
         >
           <option value="">Seleccione una Opción</option>
-          <option value="infusion">Infusion</option>
-          <option value="salado">Salado</option>
-          <option value="panificacion">Panificacion</option>
-          <option value="bebidaFria">Bebida Fría</option>
+          <option value="Infusion">Infusion</option>
+          <option value="Salado">Salado</option>
+          <option value="Panificacion">Panificacion</option>
+          <option value="Bebida Fria">Bebida Fría</option>
         </Form.Select>
       </Form.Group>
 

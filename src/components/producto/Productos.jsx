@@ -1,14 +1,43 @@
-import React from 'react';
-import CardProducto from './CardProducto';
+import React from "react";
+import CardProducto from "./CardProducto";
+import { obtenerListaProducto } from "../../helpers/queries";
+import { useEffect, useState } from "react";
 
 const Productos = () => {
-    return (
-        <section className='grillaProductos'>
-            <CardProducto imagen="https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696"/>
-            <CardProducto imagen="https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cheat-menu-saudi/products/cappuchino-Cappuccino_-_12Oz.jpg"/>
- 
-        </section>
-    );
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    obtenerProductos();
+  }, []);
+
+  const obtenerProductos = async () => {
+    const respuesta = await obtenerListaProducto();
+    if (respuesta.status === 200) {
+      const productos = await respuesta.json();
+      setProductos(productos);
+      console.log(productos);
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Intentelo nuevamente más tarde",
+      });
+    }
+  };
+  return (
+    <section className="grillaProductos">
+      {productos.map((producto) => (
+        <CardProducto
+          key={producto.id}
+          imagen={producto.imagen}
+          nombre={producto.nombre}
+          categoria={producto.categoria}
+          descripcionBreve={producto.descripcionBreve}
+          precio={producto.precio}
+        />
+      ))}
+    </section>
+  );
 };
 
 export default Productos;
