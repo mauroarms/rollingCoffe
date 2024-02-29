@@ -13,7 +13,6 @@ export const crearProductoAPI = async (producto) => {
         },
         body: JSON.stringify(producto)
     });
-    console.log(respuesta)
 
     return respuesta
   } catch (error) {

@@ -1,35 +1,53 @@
 {
-    "productos":[
-        {
-            "id": "1",
-            "nombre" : "Café Americano",
-            "imagen" : "asfasf",
-            "descripcionBreve" : "cafecito",
-            "descripcionAmplia" : "cafecito",
-            "precio" : 1200,
-            "categoria" : "Bebida caliente",
-            "disponible" : true
-        },
-        {
-            "id": "2",
-            "nombre" : "Cappuchino",
-            "imagen" : "asfasf",
-            "descripcionBreve" : "Cappuchino",
-            "descripcionAmplia" : "Cappuchino",
-            "precio" : 1500,
-            "categoria" : "Bebida caliente",
-            "disponible" : true
-        }
-    ],
-    "usuarios":[
-        {
-            "id": "1",
-            "mail" : "mauro.armas14@gmail.com",
-            "pass" : "maurito1234",
-            "user" : "mauro_arms",
-            "type" : "admin"
-
-        }
-    ]
-
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Café Americano",
+      "imagen": "asfasf",
+      "descripcionBreve": "cafecito",
+      "descripcionAmplia": "cafecito",
+      "precio": 1200,
+      "categoria": "Bebida caliente",
+      "disponible": true
+    },
+    {
+      "id": "2",
+      "nombre": "Cappuchino",
+      "imagen": "asfasf",
+      "descripcionBreve": "Cappuchino",
+      "descripcionAmplia": "Cappuchino",
+      "precio": 1500,
+      "categoria": "Bebida caliente",
+      "disponible": true
+    },
+    {
+      "id": "8b95",
+      "nombre": "te",
+      "imagen": "https://images.pexels.com/photos/1493080/pexels-photo-1493080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "descripcionBreve": "asfafasfasf",
+      "descripcionAmplia": "asfasfsafafas",
+      "categoria": "infusion",
+      "precio": "3444",
+      "disponible": false
+    },
+    {
+      "id": "d82a",
+      "nombre": "Chocolatada",
+      "imagen": "https://www.vitamixespana.com/recetas/wp-content/uploads/2016/10/chocolate-caliente.jpg",
+      "descripcionBreve": "Chocolatada nesquik con leche",
+      "descripcionAmplia": "Chocolatada fria o caliente ",
+      "categoria": "infusion",
+      "precio": "200",
+      "disponible": false
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "mail": "mauro.armas14@gmail.com",
+      "pass": "maurito1234",
+      "user": "mauro_arms",
+      "type": "admin"
+    }
+  ]
 }
