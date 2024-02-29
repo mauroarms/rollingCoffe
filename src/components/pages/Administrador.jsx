@@ -18,8 +18,9 @@ const Administrador = () => {
   const obtenerProductos = async () => {
     const respuesta = await obtenerListaProducto();
     if (respuesta.status === 200) {
-      const recetas = respuesta.json();
+      const recetas = await respuesta.json();
       setProductos(recetas);
+      console.log(recetas)
     }
   };
 
