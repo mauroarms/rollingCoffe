@@ -10,7 +10,7 @@ const CardProducto = ({ imagen, nombre, categoria, descripcionBreve, precio }) =
       <Card.Img className="imgCard" variant="top" src={imagen} />
       <Card.Body className="d-flex flex-column justify-content-between">
         <Container>
-          <Card.Text className="mb-0 text-secondary">
+          <Card.Text className="mb-0 text-secondary text-decoration-underline">
             {categoria}
           </Card.Text>
 
@@ -21,7 +21,7 @@ const CardProducto = ({ imagen, nombre, categoria, descripcionBreve, precio }) =
               Descripción: <br />
             </strong>
             {descripcionBreve}
-          </Card.Text>
+          </Card.Text> 
         </Container>
 
         <Card.Footer className="footerProducto">

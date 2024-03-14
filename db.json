@@ -49,13 +49,43 @@
       "categoria": "Bebida Fria",
       "precio": "5000",
       "disponible": false
+    },
+    {
+      "id": "9d3f",
+      "nombre": "Croissant",
+      "imagen": "https://www.clarin.com/2020/07/17/qHfIs_gwt_1200x0__1.jpg",
+      "descripcionBreve": "ssfafsafasfafasfafsaf",
+      "descripcionAmplia": "El cruasán es una pieza de panadería de origen francés. Fue creada en París en el siglo XIX donde los panaderos locales se inspiraron de la forma del kifli austriaco popularizado por el panadero vienés",
+      "categoria": "Panificacion",
+      "precio": "500",
+      "disponible": false
+    },
+    {
+      "id": "0876",
+      "nombre": "Avo toast",
+      "imagen": "https://www.eatingwell.com/thmb/uVY_gqoovBnnh0ELyntL-vhKLIg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/EWL-267169-avocado-egg-toast-Hero-01-9385a3b6112b409b944e04d1cb6a9733.jpg",
+      "descripcionBreve": "asfafasfasfafssafsafas",
+      "descripcionAmplia": "asfafafasfafasfasfafssafsafasasfafasfasfafssafsafasasfafasfasfafssafsafasasfafasfasfafssafsafas",
+      "categoria": "Salado",
+      "precio": "4500",
+      "disponible": false
+    },
+    {
+      "id": "cb7a",
+      "nombre": "Medialuna link",
+      "imagen": "https://www.cdmarket.com.ar/Image/0/600_750-The-Legend-of-Zelda-Breath-of-the-Wild.jpg",
+      "descripcionBreve": "asfasfsafsafa",
+      "descripcionAmplia": "asfasfasfasfasfasfasfasfasfafas",
+      "categoria": "Salado",
+      "precio": "2121",
+      "disponible": false
     }
   ],
   "usuarios": [
     {
       "id": "1",
       "mail": "mauro.armas14@gmail.com",
-      "pass": "maurito1234",
+      "pass": "mauro1234",
       "user": "mauro_arms",
       "type": "admin"
     }

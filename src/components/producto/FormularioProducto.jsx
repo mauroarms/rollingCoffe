@@ -40,6 +40,7 @@ const FormularioProducto = () => {
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Group className="mb-3" controlId="formNombre">
         <Form.Label>Nombre:</Form.Label>
+        
         <Form.Control
           type="text"
           placeholder="Nombre del producto"
@@ -158,7 +159,6 @@ const FormularioProducto = () => {
         <Form.Label>Disponible:</Form.Label>
         <Form.Check type="switch" id="checkStock" {...register("disponible")}/>
       </Form.Group>
-
       
       <Button
         type="submit"

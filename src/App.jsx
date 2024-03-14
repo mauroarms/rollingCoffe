@@ -19,20 +19,19 @@ function App() {
       <BarraNavegacion />
       <section className="contenidoPrincipal">
         <Routes>
+
           {/* //www.rollingCoffe.com/ */}
           <Route exact path="/" element={<Index />}></Route>
 
           {/* //www.rollingCoffe.com/admin */}
           <Route exact path="/admin" element={<Administrador />}></Route>
-          {/* //www.rollingCoffe.com/admin */}
-          <Route exact path="/admin/crear" element={<Administrador />}></Route>
-          {/* //www.rollingCoffe.com/admin */}
-          <Route exact path="/admin/eliminar" element={<Administrador />}></Route>
-          {/* //www.rollingCoffe.com/admin */}
+
+          {/* //www.rollingCoffe.com/producto */}
           <Route exact path="/producto" element={<DetalleProducto />}></Route>
 
           {/* //www.rollingCoffe.com/ */}
           <Route path="*" element={<Error404/>}></Route>
+          
         </Routes>
       </section>
       <Footer />
