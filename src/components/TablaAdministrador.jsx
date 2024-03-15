@@ -19,11 +19,11 @@ const TablaAdministrador = () => {
     if (respuesta.status === 200) {
       const productos = await respuesta.json();
       setProductos(productos);
-      console.log(productos)
+      console.log(productos);
     }else{
       Swal.fire({
         icon: "error",
-        title: "Error",
+        title: "Error: no se pudo obtener los productos",
         text: "Intentelo nuevamente más tarde",
       });
     }
@@ -48,6 +48,7 @@ const TablaAdministrador = () => {
             text: "Producto borrado exitosamente",
             icon: "success"
           });
+          obtenerProductos();
         }else{
           Swal.fire({
             title: `No se pudo borrar "${producto.nombre}" de la lista de productos`,

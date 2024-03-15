@@ -36,6 +36,7 @@ const FormularioProducto = () => {
 
   };
 
+
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Group className="mb-3" controlId="formNombre">
@@ -82,14 +83,14 @@ const FormularioProducto = () => {
           rows={1}
           placeholder="Descripción breve de su producto"
           {...register("descripcionBreve", {
-            required: "Ingrese una descripción",
+            required: "Ingrese una descripción breve del producto",
             minLength: {
               value: 5,
-              message: "Ingrese una descripcion amplia con mínimo 30 caracteres",
+              message: "Ingrese una descripcion breve con mínimo 5 caracteres",
             },
             maxLenght: {
-              value: 700,
-              message: "Ingrese una descripcion amplia con máximo 700 caracteres",
+              value: 200,
+              message: "Ingrese una descripcion breve con máximo 200 caracteres",
             },
           })}
         />
@@ -106,13 +107,13 @@ const FormularioProducto = () => {
           placeholder="Descripción amplia de su producto"
           {...register("descripcionAmplia", {
             required: "Ingrese una descripción",
-            min: {
-              value: 5,
-              message: "Ingrese una descripcion breve con mínimo 10 caracteres"
+            minLength: {
+              value: 10,
+              message: "Ingrese una descripcion amplia con mínimo 10 caracteres"
             },
-            max: {
-              value: 150,
-              message: "Ingrese una descripcion breve con mínimo 150 caracteres"
+            maxLength: {
+              value: 1000,
+              message: "Ingrese una descripcion amplia con máximo 1000 caracteres"
             },
           })}
         />

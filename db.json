@@ -12,23 +12,13 @@
     },
     {
       "id": "2",
-      "nombre": "Cappuchino",
+      "nombre": "Cappuchinosfafasfasfsafasfasfa",
       "imagen": "https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cheat-menu-saudi/products/cappuchino-Cappuccino_-_12Oz.jpg",
       "descripcionBreve": "Cappuchino",
       "descripcionAmplia": "Cappuchino",
       "precio": 1500,
       "categoria": "Bebida caliente",
       "disponible": true
-    },
-    {
-      "id": "8b95",
-      "nombre": "te",
-      "imagen": "https://images.pexels.com/photos/1493080/pexels-photo-1493080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "descripcionBreve": "asfafasfasf",
-      "descripcionAmplia": "asfasfsafafas",
-      "categoria": "infusion",
-      "precio": "3444",
-      "disponible": false
     },
     {
       "id": "24c2",
@@ -59,6 +49,66 @@
       "categoria": "Salado",
       "precio": "4500",
       "disponible": false
+    },
+    {
+      "id": "8f94",
+      "nombre": "Crumble de Manzana",
+      "imagen": "https://e00-xlk-cooking-elmundo.uecdn.es/files/image_414_276/uploads/2023/02/28/63fe58f7c20c2.jpeg",
+      "descripcionBreve": "aafsasfasfasfassfa",
+      "descripcionAmplia": "safasfafasfasfafaasfasfafsafafasfasffasf",
+      "categoria": "Panificacion",
+      "precio": "200",
+      "disponible": false
+    },
+    {
+      "id": "c340",
+      "nombre": "Iced Vietnamesse",
+      "imagen": "https://img.taste.com.au/UHFv39Ks/taste/2020/05/jun20_vietnamese-iced-coffee-161761-1.jpg",
+      "descripcionBreve": "Exótico y estimulante, el café Iced Vietn",
+      "descripcionAmplia": "El café Iced Vietnamese es una delicia refrescante que captura la esencia de la tradición cafetera de Vietnam. Preparado con café vietnamita robusto y molido finamente, este brebaje es filtrado lentamente a través de un phin, un filtro de goteo tradicional, que extrae su sabor distintivo y concentrado. Para equilibrar la intensidad del café, se agrega cuidadosamente leche condensada, que aporta una dulzura seductora y una textura cremosa incomparable. El toque final lo proporciona una generosa porción de hielo, que no solo enfría la bebida, sino que también realza su refrescante carácter. Cada sorbo de café Iced Vietnamese es una experiencia sensorial que evoca los vibrantes mercados callejeros de Vietnam, donde los aromas de café fresco y las risas llenan el aire. Con su combinación única de sabores y su refrescante perfil, esta bebida se convierte en una elección incomparable para aquellos que buscan una experiencia caféinada única y estimulante.",
+      "categoria": "Infusion",
+      "precio": "4500",
+      "disponible": true
+    },
+    {
+      "id": "e3e9",
+      "nombre": "Croissant de almendra",
+      "imagen": "https://www.nanette.com.ar/wp-content/uploads/2020/06/croissantdealmendras.jpg",
+      "descripcionBreve": "Delicado croissant horneado hasta la perfección y relleno con una mezcla suave de almendra dulce, ofreciendo un sabor y una textura irresistibles.",
+      "descripcionAmplia": "El croissant de almendra es una exquisitez de la repostería que combina la ligereza y la delicadeza de un croissant francés con el dulzor y la textura cremosa de la almendra. Elaborado con una masa hojaldrada que se deshace en la boca con cada bocado, este croissant se rellena generosamente con una mezcla suave y cremosa de almendras molidas y azúcar, que se caramelizan ligeramente durante el horneado para crear una capa exterior crujiente y dorada. Cada mordisco revela un equilibrio perfecto entre la mantequilla y la dulzura de la almendra, mientras que el contraste entre la capa exterior crujiente y el interior tierno y esponjoso deleita los sentidos. Ya sea acompañado de un café recién hecho o disfrutado como un tentempié por sí solo, el croissant de almendra es una indulgencia irresistible que eleva cualquier experiencia en la cafetería.",
+      "categoria": "Panificacion",
+      "precio": "3200",
+      "disponible": true
+    },
+    {
+      "id": "1a22",
+      "nombre": "Latte Machiatto",
+      "imagen": "https://liliebakery.fr/wp-content/uploads/2023/10/Latte-macchiato-Lilie-Bakery.jpg",
+      "descripcionBreve": "Una elegante y sedosa combinación de leche vaporizada y un espresso suave, coronada con una fina capa de espuma, que cautiva con su suave sabor y su atractiva presentación en capas.",
+      "descripcionAmplia": "El Latte Macchiato es una obra maestra de la preparación del café que combina habilidad técnica con un toque de arte. Preparado con una base de leche vaporizada, que se calienta hasta alcanzar una temperatura perfecta para resaltar su dulzura natural y crear una textura sedosa y cremosa, este latte se sirve en un vaso alto y delgado. Con precisión milimétrica, se añade un espresso suave en la parte superior de la leche vaporizada, dejando que se deslice lentamente por las capas para crear un efecto visual impresionante. La bebida se corona con una fina capa de espuma de leche, que aporta una textura cremosa y un sabor ligero y aireado. Cada sorbo revela una armoniosa fusión de café y leche, con el dulzor de la leche que equilibra la intensidad del espresso, creando una experiencia indulgente y satisfactoria para los amantes del café.",
+      "categoria": "Infusion",
+      "precio": "2500",
+      "disponible": true
+    },
+    {
+      "id": "33f8",
+      "nombre": "Frappuccino",
+      "imagen": "https://www.losandes.com.ar/resizer/V94VfT7osqvfHqh9qzeK4aqVJOY=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/RWYQHN5ZHVHMTOTIXR7SB3UKB4.jpg",
+      "descripcionBreve": "Refrescante y indulgente, el Frappuccino es una mezcla cremosa de café, hielo y leche, coronada con crema batida y sirope, perfecta para cualquier día caluroso.",
+      "descripcionAmplia": "El Frappuccino es una bebida de café helada y deliciosa que se ha convertido en un favorito en todo el mundo. Se elabora combinando café espresso o café fuerte, hielo picado, leche y una variedad de jarabes y saborizantes, según la receta específica. Esta mezcla se licúa hasta obtener una textura suave y cremosa. La versatilidad del Frappuccino permite una amplia gama de variaciones, desde los clásicos como el Mocha o el Caramel hasta opciones más innovadoras con sabores estacionales. La bebida se sirve en un vaso frío y se corona con crema batida y un toque final de sirope, lo que la convierte en un deleite visual y gustativo. El Frappuccino es la opción ideal para satisfacer antojos de café en días calurosos o simplemente para darse un capricho indulgente en cualquier momento del año. Su combinación de frescura, sabor y textura lo convierte en una elección popular entre los amantes del café y los aficionados a las bebidas heladas por igual.",
+      "categoria": "Infusion",
+      "precio": "3500",
+      "disponible": true
+    },
+    {
+      "id": "2d02",
+      "nombre": "Iced Mocha",
+      "imagen": "https://wholefully.com/wp-content/uploads/2021/06/homemade-iced-mocha-coffee.jpg",
+      "descripcionBreve": "Refrescante y delicioso, el Iced Mocha combina el intenso sabor del café con el rico chocolate y el toque refrescante del hielo, creando una experiencia única y deliciosa.",
+      "descripcionAmplia": "El Iced Mocha es una bebida cautivadora que ofrece una armoniosa fusión de sabores. Comenzando con una base de espresso cuidadosamente elaborado, se le agrega una mezcla perfecta de jarabe de chocolate, que aporta una dulzura indulgente sin ser abrumadora. Luego, se completa con una generosa cantidad de hielo, que no solo enfría la bebida, sino que también crea una textura refrescante y satisfactoria. La cremosidad del café se equilibra magistralmente con la suavidad del chocolate, resultando en una experiencia sensorial que deleita los sentidos en cada sorbo. Tanto para los amantes del café como para aquellos que buscan una indulgencia refrescante, el Iced Mocha es una opción irresistible que cautiva desde el primer sorbo hasta el último.",
+      "categoria": "Infusion",
+      "precio": "5000",
+      "disponible": true
     }
   ],
   "usuarios": [
