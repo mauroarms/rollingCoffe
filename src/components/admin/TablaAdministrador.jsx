@@ -51,7 +51,7 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
           <th>Precio</th>
           <th>URL de Imagen</th>
           <th>Categoria</th>
-          <th>Dispoibilidad</th>
+          <th>Disponibilidad</th>
           <th>Opciones</th>
         </tr>
       </thead>
@@ -74,23 +74,29 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
             <td className="text-center">
               <div className="d-flex justify-content-center mt-5">
                 {producto.disponible ? (
-                  <FontAwesomeIcon icon={faCircleCheck} className="display-6" style={{color: "#07461a",}}/>
-
+                  <FontAwesomeIcon
+                    icon={faCircleCheck}
+                    className="display-6"
+                    style={{ color: "#07461a" }}
+                  />
                 ) : (
-                  <FontAwesomeIcon icon={faCircleXmark} className="display-6" style={{color: "#5e0003",}}/>
+                  <FontAwesomeIcon
+                    icon={faCircleXmark}
+                    className="display-6"
+                    style={{ color: "#5e0003" }}
+                  />
                 )}
               </div>
             </td>
             <td>
               <div className="d-flex flex-column mt-3 align-items-center">
                 {/* Editar fila */}
-                <Button  className="btnPrincipal">
+                <Button className="btnPrincipal">
                   <FontAwesomeIcon icon={faPenToSquare} />
                 </Button>
 
                 {/* Borrar fila */}
                 <Button
-                  
                   className="mt-5 btnBorrar"
                   onClick={() => borrarProducto(producto)}
                 >
