@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { crearProductoAPI } from "../../helpers/queries";
 import Swal from 'sweetalert2';
 
-const FormularioProducto = () => {
+const FormularioProducto = ({obtenerProductos}) => {
   const {
     register,
     handleSubmit,
@@ -24,7 +24,8 @@ const FormularioProducto = () => {
         text: `Se agregó ${producto.nombre} exitosamente`,
         icon: "success"
       });
-      reset()
+      reset();
+      obtenerProductos();
       
     }else{
       Swal.fire({

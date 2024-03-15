@@ -11,16 +11,6 @@
       "disponible": true
     },
     {
-      "id": "2",
-      "nombre": "Cappuchinosfafasfasfsafasfasfa",
-      "imagen": "https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cheat-menu-saudi/products/cappuchino-Cappuccino_-_12Oz.jpg",
-      "descripcionBreve": "Cappuchino",
-      "descripcionAmplia": "Cappuchino",
-      "precio": 1500,
-      "categoria": "Bebida caliente",
-      "disponible": true
-    },
-    {
       "id": "24c2",
       "nombre": "Frapuccino oreo",
       "imagen": "https://totallythebomb.com/wp-content/uploads/2020/05/shutterstock_186240506-735x1103.jpg",
@@ -101,13 +91,13 @@
       "disponible": true
     },
     {
-      "id": "2d02",
-      "nombre": "Iced Mocha",
-      "imagen": "https://wholefully.com/wp-content/uploads/2021/06/homemade-iced-mocha-coffee.jpg",
-      "descripcionBreve": "Refrescante y delicioso, el Iced Mocha combina el intenso sabor del café con el rico chocolate y el toque refrescante del hielo, creando una experiencia única y deliciosa.",
-      "descripcionAmplia": "El Iced Mocha es una bebida cautivadora que ofrece una armoniosa fusión de sabores. Comenzando con una base de espresso cuidadosamente elaborado, se le agrega una mezcla perfecta de jarabe de chocolate, que aporta una dulzura indulgente sin ser abrumadora. Luego, se completa con una generosa cantidad de hielo, que no solo enfría la bebida, sino que también crea una textura refrescante y satisfactoria. La cremosidad del café se equilibra magistralmente con la suavidad del chocolate, resultando en una experiencia sensorial que deleita los sentidos en cada sorbo. Tanto para los amantes del café como para aquellos que buscan una indulgencia refrescante, el Iced Mocha es una opción irresistible que cautiva desde el primer sorbo hasta el último.",
-      "categoria": "Infusion",
-      "precio": "5000",
+      "id": "86bf",
+      "nombre": "Brownie",
+      "imagen": "https://laopinionaustral.com.ar/media/uploads/2023/10/receta-de-brownie-casero.jpg",
+      "descripcionBreve": "Un dulce tentador, el brownie es un pastel denso y rico, hecho con chocolate y nueces, perfecto para satisfacer antojos de postre.",
+      "descripcionAmplia": "El brownie es un clásico postre que deleita a los amantes del chocolate en todo el mundo. Con una textura densa y húmeda, este pastel se elabora con una mezcla indulgente de chocolate, mantequilla, azúcar, huevos y harina, junto con trozos de nueces o chispas de chocolate para añadir un extra de sabor y textura. Su aroma tentador llena la cocina mientras se hornea, y su aspecto apetitoso hace que sea difícil resistirse a un bocado. Cada mordisco de brownie ofrece una explosión de sabor a chocolate, complementado por la dulzura reconfortante del azúcar y la cremosidad de la mantequilla. Se puede disfrutar solo, acompañado de una bola de helado de vainilla o cubierto con una generosa capa de ganache de chocolate para una experiencia aún más decadente. Ya sea como un postre indulgente después de una comida o como un capricho reconfortante en cualquier momento del día, el brownie es una delicia clásica que nunca pasa de moda.",
+      "categoria": "Panificacion",
+      "precio": "500",
       "disponible": true
     }
   ],

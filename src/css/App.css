@@ -14,6 +14,7 @@ footer {
   height: 450px;
 }
 .btnPrincipal {
+  border: none;
   background-image: linear-gradient(
     to right,
     #093028 0%,
@@ -35,3 +36,31 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+.btnBorrar {
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #e52d27 0%,
+    #b31217 51%,
+    #e52d27 100%
+  );
+  padding: 8px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.7s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btnBorrar:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+        
+
+
