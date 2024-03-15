@@ -5,14 +5,13 @@ const URI_Producto = import.meta.env.VITE_API_PRODUCTOS;
 export const crearProductoAPI = async (producto) => {
   console.log(URI_Producto);
   try {
-    const respuesta = 
-      await fetch(URI_Producto, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(producto) 
-      });
+    const respuesta = await fetch(URI_Producto, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(producto),
+    });
 
     return respuesta;
   } catch (error) {
@@ -26,6 +25,20 @@ export const obtenerListaProducto = async () => {
     const respuesta = await fetch(URI_Producto);
     console.log(respuesta);
     return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+//DELETE
+
+export const borrarProductoAPI = async (idProducto) => {
+  try {
+    const respuesta = await fetch(`${URI_Producto}/${idProducto}`, {
+      method: "DELETE",
+    });
+    console.log(respuesta)
+    return respuesta
   } catch (error) {
     console.log(error);
   }

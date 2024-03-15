@@ -2,8 +2,9 @@ import { Button } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
-import { obtenerListaProducto } from "../helpers/queries";
+import { borrarProductoAPI, obtenerListaProducto } from "../helpers/queries";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 const TablaAdministrador = () => {
 
@@ -28,11 +29,42 @@ const TablaAdministrador = () => {
     }
   };
 
+  const borrarProducto = (producto) => {
+    Swal.fire({
+      title: `Estás seguro que deseas borrar "${producto.nombre}"` ,
+      text: "No podrás revertir esta acción",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Borrar",
+      cancelButtonText: "Cancelar"
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        const respuesta = await borrarProductoAPI(producto.id)
+        if(respuesta.status === 200){
+          Swal.fire({
+            title: `Se borró "${producto.nombre}" de la lista de productos`,
+            text: "Producto borrado exitosamente",
+            icon: "success"
+          });
+        }else{
+          Swal.fire({
+            title: `No se pudo borrar "${producto.nombre}" de la lista de productos`,
+            text: "Intente de nuevo más tarde",
+            icon: "error"
+          });
+        }
+
+      }
+    });
+  };
+
   return (
     <Table striped bordered hover responsive>
       <thead>
         <tr>
-          <th></th>
+          <th>Código</th>
           <th>Producto</th>
           <th>Precio</th>
           <th>URL de Imagen</th>
@@ -58,10 +90,13 @@ const TablaAdministrador = () => {
             <td>{producto.categoria}</td>
             <td>
               <div className="d-flex flex-column mt-3 align-items-center">
+                {/* Editar fila */}
                 <Button variant="warning">
                   <FontAwesomeIcon icon={faPenToSquare} />
                 </Button>
-                <Button variant="danger" className="mt-5">
+
+                {/* Borrar fila */}
+                <Button variant="danger" className="mt-5" onClick={() => borrarProducto(producto)}>
                   <FontAwesomeIcon icon={faTrash} />
                 </Button>
               </div>

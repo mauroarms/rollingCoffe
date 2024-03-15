@@ -31,16 +31,6 @@
       "disponible": false
     },
     {
-      "id": "d82a",
-      "nombre": "Chocolatada",
-      "imagen": "https://www.vitamixespana.com/recetas/wp-content/uploads/2016/10/chocolate-caliente.jpg",
-      "descripcionBreve": "Chocolatada nesquik con leche",
-      "descripcionAmplia": "Chocolatada fria o caliente ",
-      "categoria": "infusion",
-      "precio": "200",
-      "disponible": false
-    },
-    {
       "id": "24c2",
       "nombre": "Frapuccino oreo",
       "imagen": "https://totallythebomb.com/wp-content/uploads/2020/05/shutterstock_186240506-735x1103.jpg",
@@ -68,16 +58,6 @@
       "descripcionAmplia": "asfafafasfafasfasfafssafsafasasfafasfasfafssafsafasasfafasfasfafssafsafasasfafasfasfafssafsafas",
       "categoria": "Salado",
       "precio": "4500",
-      "disponible": false
-    },
-    {
-      "id": "cb7a",
-      "nombre": "Medialuna link",
-      "imagen": "https://www.cdmarket.com.ar/Image/0/600_750-The-Legend-of-Zelda-Breath-of-the-Wild.jpg",
-      "descripcionBreve": "asfasfsafsafa",
-      "descripcionAmplia": "asfasfasfasfasfasfasfasfasfafas",
-      "categoria": "Salado",
-      "precio": "2121",
       "disponible": false
     }
   ],
