@@ -9,20 +9,17 @@ const CardProducto = ({ imagen, nombre, categoria, descripcionBreve, precio }) =
     <Card className="cardProducto">
       <Card.Img className="imgCard" variant="top" src={imagen} />
       <Card.Body className="d-flex flex-column justify-content-between">
-        <Container>
+        <div>
           <Card.Text className="mb-0 text-secondary text-decoration-underline">
             {categoria}
           </Card.Text>
 
-          <Card.Title className="tituloProducto mb-3">{nombre}</Card.Title>
+          <Card.Title className="tituloProducto mb-3 mt-1">{nombre}</Card.Title>
 
           <Card.Text className="secDesc">
-            <strong>
-              Descripción: <br />
-            </strong>
             {descripcionBreve}
           </Card.Text> 
-        </Container>
+        </div>
 
         <Card.Footer className="footerProducto">
           <Card.Text className="my-auto">

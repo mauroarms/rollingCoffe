@@ -1,9 +1,9 @@
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoAPI } from "../../helpers/queries";
+import { crearProductoAPI, obtenerProductoPorIdAPI } from "../../helpers/queries";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const FormularioProducto = ({editar}) => {
   const {
@@ -11,9 +11,32 @@ const FormularioProducto = ({editar}) => {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue
   } = useForm();
 
+  const {idProducto} = useParams();
   const history = useNavigate();
+
+  useEffect(()=>{
+    if(editar){
+      cargarProducto(idProducto);
+    }
+  },[])
+
+  const cargarProducto = async (idBusqueda) =>{
+    console.log(idBusqueda)
+    const respuesta = await obtenerProductoPorIdAPI(idBusqueda)
+    if(respuesta.status === 200){
+      const productoEncontrado = await respuesta.json();
+      setValue("nombre", productoEncontrado.nombre);
+      setValue("imagen", productoEncontrado.imagen);
+      setValue("descripcionBreve", productoEncontrado.descripcionBreve);
+      setValue("descripcionAmplia", productoEncontrado.descripcionAmplia);
+      setValue("categoria", productoEncontrado.categoria);
+      setValue("precio", productoEncontrado.precio);
+      setValue("disponible", productoEncontrado.disponible);
+    }
+  }
 
   const onSubmit = async (producto) => {
     if(editar){
@@ -150,10 +173,10 @@ const FormularioProducto = ({editar}) => {
           })}
         >
           <option value="">Seleccione una Opción</option>
-          <option value="Infusion">Infusion</option>
+          <option value="Infusión">Infusión</option>
           <option value="Salado">Salado</option>
-          <option value="Panificacion">Panificacion</option>
-          <option value="Bebida Fria">Bebida Fría</option>
+          <option value="Panificación">Panificación</option>
+          <option value="Bebida Fría">Bebida Fría</option>
         </Form.Select>
       </Form.Group>
 

@@ -6,7 +6,7 @@
       "imagen": "https://totallythebomb.com/wp-content/uploads/2020/05/shutterstock_186240506-735x1103.jpg",
       "descripcionBreve": "Bebida fria a base de oreo y leche",
       "descripcionAmplia": "Un gustito dulce hecho con intenso sabor a chocolate, un toque de café y trocitos de galletas OREO®. Se mezcla con hielo y cubre a mano con crema batida ligera y unos trocitos más de galletas OREO® para que no falten. Disponible en tamaños pequeño, mediano y grande.",
-      "categoria": "Bebida Fria",
+      "categoria": "Bebida Fría",
       "precio": "5000",
       "disponible": false
     },
@@ -16,7 +16,7 @@
       "imagen": "https://www.clarin.com/2020/07/17/qHfIs_gwt_1200x0__1.jpg",
       "descripcionBreve": "ssfafsafasfafasfafsaf",
       "descripcionAmplia": "El cruasán es una pieza de panadería de origen francés. Fue creada en París en el siglo XIX donde los panaderos locales se inspiraron de la forma del kifli austriaco popularizado por el panadero vienés",
-      "categoria": "Panificacion",
+      "categoria": "Panificación",
       "precio": "500",
       "disponible": false
     },
@@ -36,7 +36,7 @@
       "imagen": "https://e00-xlk-cooking-elmundo.uecdn.es/files/image_414_276/uploads/2023/02/28/63fe58f7c20c2.jpeg",
       "descripcionBreve": "aafsasfasfasfassfa",
       "descripcionAmplia": "safasfafasfasfafaasfasfafsafafasfasffasf",
-      "categoria": "Panificacion",
+      "categoria": "Panificación",
       "precio": "200",
       "disponible": false
     },
@@ -46,7 +46,7 @@
       "imagen": "https://img.taste.com.au/UHFv39Ks/taste/2020/05/jun20_vietnamese-iced-coffee-161761-1.jpg",
       "descripcionBreve": "Exótico y estimulante, el café Iced Vietn",
       "descripcionAmplia": "El café Iced Vietnamese es una delicia refrescante que captura la esencia de la tradición cafetera de Vietnam. Preparado con café vietnamita robusto y molido finamente, este brebaje es filtrado lentamente a través de un phin, un filtro de goteo tradicional, que extrae su sabor distintivo y concentrado. Para equilibrar la intensidad del café, se agrega cuidadosamente leche condensada, que aporta una dulzura seductora y una textura cremosa incomparable. El toque final lo proporciona una generosa porción de hielo, que no solo enfría la bebida, sino que también realza su refrescante carácter. Cada sorbo de café Iced Vietnamese es una experiencia sensorial que evoca los vibrantes mercados callejeros de Vietnam, donde los aromas de café fresco y las risas llenan el aire. Con su combinación única de sabores y su refrescante perfil, esta bebida se convierte en una elección incomparable para aquellos que buscan una experiencia caféinada única y estimulante.",
-      "categoria": "Infusion",
+      "categoria": "Infusión",
       "precio": "4500",
       "disponible": true
     },
@@ -56,7 +56,7 @@
       "imagen": "https://www.nanette.com.ar/wp-content/uploads/2020/06/croissantdealmendras.jpg",
       "descripcionBreve": "Delicado croissant horneado hasta la perfección y relleno con una mezcla suave de almendra dulce, ofreciendo un sabor y una textura irresistibles.",
       "descripcionAmplia": "El croissant de almendra es una exquisitez de la repostería que combina la ligereza y la delicadeza de un croissant francés con el dulzor y la textura cremosa de la almendra. Elaborado con una masa hojaldrada que se deshace en la boca con cada bocado, este croissant se rellena generosamente con una mezcla suave y cremosa de almendras molidas y azúcar, que se caramelizan ligeramente durante el horneado para crear una capa exterior crujiente y dorada. Cada mordisco revela un equilibrio perfecto entre la mantequilla y la dulzura de la almendra, mientras que el contraste entre la capa exterior crujiente y el interior tierno y esponjoso deleita los sentidos. Ya sea acompañado de un café recién hecho o disfrutado como un tentempié por sí solo, el croissant de almendra es una indulgencia irresistible que eleva cualquier experiencia en la cafetería.",
-      "categoria": "Panificacion",
+      "categoria": "Panificación",
       "precio": "3200",
       "disponible": true
     },
@@ -66,7 +66,7 @@
       "imagen": "https://liliebakery.fr/wp-content/uploads/2023/10/Latte-macchiato-Lilie-Bakery.jpg",
       "descripcionBreve": "Una elegante y sedosa combinación de leche vaporizada y un espresso suave, coronada con una fina capa de espuma, que cautiva con su suave sabor y su atractiva presentación en capas.",
       "descripcionAmplia": "El Latte Macchiato es una obra maestra de la preparación del café que combina habilidad técnica con un toque de arte. Preparado con una base de leche vaporizada, que se calienta hasta alcanzar una temperatura perfecta para resaltar su dulzura natural y crear una textura sedosa y cremosa, este latte se sirve en un vaso alto y delgado. Con precisión milimétrica, se añade un espresso suave en la parte superior de la leche vaporizada, dejando que se deslice lentamente por las capas para crear un efecto visual impresionante. La bebida se corona con una fina capa de espuma de leche, que aporta una textura cremosa y un sabor ligero y aireado. Cada sorbo revela una armoniosa fusión de café y leche, con el dulzor de la leche que equilibra la intensidad del espresso, creando una experiencia indulgente y satisfactoria para los amantes del café.",
-      "categoria": "Infusion",
+      "categoria": "Infusión",
       "precio": "2500",
       "disponible": true
     },
@@ -76,7 +76,7 @@
       "imagen": "https://www.losandes.com.ar/resizer/V94VfT7osqvfHqh9qzeK4aqVJOY=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/RWYQHN5ZHVHMTOTIXR7SB3UKB4.jpg",
       "descripcionBreve": "Refrescante y indulgente, el Frappuccino es una mezcla cremosa de café, hielo y leche, coronada con crema batida y sirope, perfecta para cualquier día caluroso.",
       "descripcionAmplia": "El Frappuccino es una bebida de café helada y deliciosa que se ha convertido en un favorito en todo el mundo. Se elabora combinando café espresso o café fuerte, hielo picado, leche y una variedad de jarabes y saborizantes, según la receta específica. Esta mezcla se licúa hasta obtener una textura suave y cremosa. La versatilidad del Frappuccino permite una amplia gama de variaciones, desde los clásicos como el Mocha o el Caramel hasta opciones más innovadoras con sabores estacionales. La bebida se sirve en un vaso frío y se corona con crema batida y un toque final de sirope, lo que la convierte en un deleite visual y gustativo. El Frappuccino es la opción ideal para satisfacer antojos de café en días calurosos o simplemente para darse un capricho indulgente en cualquier momento del año. Su combinación de frescura, sabor y textura lo convierte en una elección popular entre los amantes del café y los aficionados a las bebidas heladas por igual.",
-      "categoria": "Infusion",
+      "categoria": "Infusión",
       "precio": "3500",
       "disponible": true
     },
@@ -86,7 +86,7 @@
       "imagen": "https://laopinionaustral.com.ar/media/uploads/2023/10/receta-de-brownie-casero.jpg",
       "descripcionBreve": "Un dulce tentador, el brownie es un pastel denso y rico, hecho con chocolate y nueces, perfecto para satisfacer antojos de postre.",
       "descripcionAmplia": "El brownie es un clásico postre que deleita a los amantes del chocolate en todo el mundo. Con una textura densa y húmeda, este pastel se elabora con una mezcla indulgente de chocolate, mantequilla, azúcar, huevos y harina, junto con trozos de nueces o chispas de chocolate para añadir un extra de sabor y textura. Su aroma tentador llena la cocina mientras se hornea, y su aspecto apetitoso hace que sea difícil resistirse a un bocado. Cada mordisco de brownie ofrece una explosión de sabor a chocolate, complementado por la dulzura reconfortante del azúcar y la cremosidad de la mantequilla. Se puede disfrutar solo, acompañado de una bola de helado de vainilla o cubierto con una generosa capa de ganache de chocolate para una experiencia aún más decadente. Ya sea como un postre indulgente después de una comida o como un capricho reconfortante en cualquier momento del día, el brownie es una delicia clásica que nunca pasa de moda.",
-      "categoria": "Panificacion",
+      "categoria": "Panificación",
       "precio": "500",
       "disponible": true
     },
@@ -96,7 +96,7 @@
       "imagen": "https://mandolina.co/wp-content/uploads/2023/06/tiramisu-1200x900.png",
       "descripcionBreve": "Un postre italiano clásico, el tiramisú es una creación celestial de capas de bizcocho empapado en café, mascarpone cremoso y cacao en polvo.",
       "descripcionAmplia": "El tiramisú es un postre indulgente que ha conquistado paladares en todo el mundo con su irresistible combinación de sabores y texturas. Esta obra maestra culinaria se compone de capas alternas de bizcochos de soletilla o savoiardi empapados en café fuerte y crema de mascarpone, endulzada con azúcar y realzada con el sabor del licor amaretto o marsala. Cada capa de esta delicia se complementa con una generosa espolvoreada de cacao en polvo, que añade un toque de amargor y sofisticación. Al sumergir una cuchara en este postre, se disfruta de una fusión de sabores decadentes y una textura sedosa que se deshace en la boca. El tiramisú es una experiencia culinaria que combina lo mejor de la repostería italiana: el rico aroma del café, la indulgente suavidad del mascarpone y la satisfacción reconfortante de cada bocado.",
-      "categoria": "Panificacion",
+      "categoria": "Panificación",
       "precio": "4000",
       "disponible": true
     },
@@ -116,7 +116,7 @@
       "imagen": "https://www.recetasparamibebe.com/wp-content/uploads/2021/02/receta-pasteles-zanahoria-para-bebes.jpg",
       "descripcionBreve": "Muffins esponjosos con zanahorias ralladas, nueces tostadas y una pizca de especias, perfectos para un desayuno nutritivo o una merienda saludable.",
       "descripcionAmplia": "Los muffins de zanahoria y nueces son una opción deliciosa y nutritiva que combina la dulzura natural de las zanahorias con el crujido de las nueces tostadas y una pizca de especias reconfortantes. Cada muffin esponjoso está cargado con zanahorias ralladas frescas que aportan humedad y dulzura natural, mientras que las nueces agregan un toque de sabor y textura irresistible. El aroma tentador de las especias como la canela y el jengibre completa la experiencia, creando un muffin lleno de sabor y satisfacción. Estos muffins son una opción ideal para un desayuno nutritivo en movimiento o una merienda saludable en cualquier momento del día. Además, son una excelente manera de incorporar más vegetales a la dieta diaria de una manera deliciosa y indulgente.",
-      "categoria": "Panificacion",
+      "categoria": "Panificación",
       "precio": "500",
       "disponible": true
     },
@@ -126,7 +126,7 @@
       "imagen": "https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696",
       "descripcionBreve": "Un café clásico",
       "descripcionAmplia": "alfnlksfnlkafnlskafnsalfnklsfnalkfs",
-      "categoria": "Infusion",
+      "categoria": "Infusión",
       "precio": "1500",
       "disponible": true
     },
@@ -136,7 +136,7 @@
       "imagen": "https://thelittlestcrumb.com/wp-content/uploads/salted-caramel-macchiato-featured-image-1.jpg",
       "descripcionBreve": "asfasffafasfafs",
       "descripcionAmplia": "asfasfsfasfasfasf",
-      "categoria": "Infusion",
+      "categoria": "Infusión",
       "precio": "2500",
       "disponible": true
     }

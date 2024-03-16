@@ -43,3 +43,16 @@ export const borrarProductoAPI = async (idProducto) => {
     console.log(error);
   }
 };
+
+
+//DELETE
+
+export const obtenerProductoPorIdAPI = async (idProducto) => {
+  try {
+    const respuesta = await fetch(`${URI_Producto}/${idProducto}`);
+    console.log(respuesta)
+    return respuesta
+  } catch (error) {
+    console.log(error);
+  }
+};
