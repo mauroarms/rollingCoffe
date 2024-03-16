@@ -57,7 +57,7 @@ const Producto = () => {
           </div>
         </div>
       </div>
-      <Container>
+      <Container className="mb-5">
         <h1 className="mt-4 display-5">También te podría gustar...</h1>
         <hr />
         <Productos></Productos>

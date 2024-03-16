@@ -99,6 +99,36 @@
       "categoria": "Panificacion",
       "precio": "500",
       "disponible": true
+    },
+    {
+      "id": "26bf",
+      "nombre": "Tiramisú",
+      "imagen": "https://mandolina.co/wp-content/uploads/2023/06/tiramisu-1200x900.png",
+      "descripcionBreve": "Un postre italiano clásico, el tiramisú es una creación celestial de capas de bizcocho empapado en café, mascarpone cremoso y cacao en polvo.",
+      "descripcionAmplia": "El tiramisú es un postre indulgente que ha conquistado paladares en todo el mundo con su irresistible combinación de sabores y texturas. Esta obra maestra culinaria se compone de capas alternas de bizcochos de soletilla o savoiardi empapados en café fuerte y crema de mascarpone, endulzada con azúcar y realzada con el sabor del licor amaretto o marsala. Cada capa de esta delicia se complementa con una generosa espolvoreada de cacao en polvo, que añade un toque de amargor y sofisticación. Al sumergir una cuchara en este postre, se disfruta de una fusión de sabores decadentes y una textura sedosa que se deshace en la boca. El tiramisú es una experiencia culinaria que combina lo mejor de la repostería italiana: el rico aroma del café, la indulgente suavidad del mascarpone y la satisfacción reconfortante de cada bocado.",
+      "categoria": "Panificacion",
+      "precio": "4000",
+      "disponible": true
+    },
+    {
+      "id": "7389",
+      "nombre": "Galletas de Chocolate y Nueces",
+      "imagen": "https://cdn0.recetasgratis.net/es/posts/8/6/5/galletas_de_mantequilla_chocolate_y_nueces_59568_orig.jpg",
+      "descripcionBreve": "Galletas caseras cargadas con trozos de chocolate semiamargo y nueces crujientes, ideales para los amantes del chocolate y los frutos secos.",
+      "descripcionAmplia": "Las galletas de chocolate y nueces son una indulgencia irresistible que combina la riqueza del chocolate con la textura crujiente de las nueces. Cada galleta está repleta de trozos generosos de chocolate semiamargo que se derriten en la boca con cada bocado, complementados por el crujido satisfactorio de las nueces tostadas. El contraste entre el dulce del chocolate y el sabor terroso de las nueces crea una experiencia de sabor equilibrada y satisfactoria. Estas galletas caseras son perfectas para cualquier ocasión: desde un tentempié indulgente para disfrutar con una taza de leche hasta un regalo casero para amigos y familiares. Además, son fáciles de hacer en casa, lo que permite disfrutar de su sabor delicioso en cualquier momento del día.",
+      "categoria": "Panificacion",
+      "precio": "500",
+      "disponible": true
+    },
+    {
+      "id": "535f",
+      "nombre": " Muffins de Zanahoria y Nueces",
+      "imagen": "https://www.recetasparamibebe.com/wp-content/uploads/2021/02/receta-pasteles-zanahoria-para-bebes.jpg",
+      "descripcionBreve": "Muffins esponjosos con zanahorias ralladas, nueces tostadas y una pizca de especias, perfectos para un desayuno nutritivo o una merienda saludable.",
+      "descripcionAmplia": "Los muffins de zanahoria y nueces son una opción deliciosa y nutritiva que combina la dulzura natural de las zanahorias con el crujido de las nueces tostadas y una pizca de especias reconfortantes. Cada muffin esponjoso está cargado con zanahorias ralladas frescas que aportan humedad y dulzura natural, mientras que las nueces agregan un toque de sabor y textura irresistible. El aroma tentador de las especias como la canela y el jengibre completa la experiencia, creando un muffin lleno de sabor y satisfacción. Estos muffins son una opción ideal para un desayuno nutritivo en movimiento o una merienda saludable en cualquier momento del día. Además, son una excelente manera de incorporar más vegetales a la dieta diaria de una manera deliciosa y indulgente.",
+      "categoria": "Panificacion",
+      "precio": "500",
+      "disponible": true
     }
   ],
   "usuarios": [

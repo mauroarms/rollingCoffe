@@ -1,15 +1,19 @@
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { crearProductoAPI } from "../../helpers/queries";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
-const FormularioProducto = ({obtenerProductos}) => {
+
+const FormularioProducto = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
   } = useForm();
+
+  const history = useNavigate();
 
   const onSubmit = async (producto) => {
     console.log(producto);
@@ -18,31 +22,37 @@ const FormularioProducto = ({obtenerProductos}) => {
     const respuesta = await crearProductoAPI(producto);
     console.log(respuesta);
 
-    if(respuesta.status===201){
+    if (respuesta.status === 201) {
       Swal.fire({
-        title: "Producto Agregado",
-        text: `Se agregó ${producto.nombre} exitosamente`,
-        icon: "success"
+        title: `${producto.nombre} fue agregado correctamente`,
+        text: "¿Qué desea realizar?",
+        icon: "success",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Agregar otro Producto",
+        cancelButtonText: "Volver a Administración",
+      }).then(async (result) => {
+        if (result.isConfirmed) {
+          reset();
+        } else {
+          history('/admin');
+        }
       });
-      reset();
-      obtenerProductos();
-      
-    }else{
+    } else {
       Swal.fire({
         icon: "error",
         title: "Error",
         text: "El producto no fue agregado, intentelo nuevamente más tarde",
       });
     }
-
   };
-
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Group className="mb-3" controlId="formNombre">
         <Form.Label>Nombre:</Form.Label>
-        
+
         <Form.Control
           type="text"
           placeholder="Nombre del producto"
@@ -91,7 +101,8 @@ const FormularioProducto = ({obtenerProductos}) => {
             },
             maxLenght: {
               value: 200,
-              message: "Ingrese una descripcion breve con máximo 200 caracteres",
+              message:
+                "Ingrese una descripcion breve con máximo 200 caracteres",
             },
           })}
         />
@@ -110,11 +121,13 @@ const FormularioProducto = ({obtenerProductos}) => {
             required: "Ingrese una descripción",
             minLength: {
               value: 10,
-              message: "Ingrese una descripcion amplia con mínimo 10 caracteres"
+              message:
+                "Ingrese una descripcion amplia con mínimo 10 caracteres",
             },
             maxLength: {
               value: 1000,
-              message: "Ingrese una descripcion amplia con máximo 1000 caracteres"
+              message:
+                "Ingrese una descripcion amplia con máximo 1000 caracteres",
             },
           })}
         />
@@ -127,7 +140,7 @@ const FormularioProducto = ({obtenerProductos}) => {
         <Form.Label>Categoria:</Form.Label>
         <Form.Select
           {...register("categoria", {
-            required: "Seleccione una Categoría"
+            required: "Seleccione una Categoría",
           })}
         >
           <option value="">Seleccione una Opción</option>
@@ -159,9 +172,9 @@ const FormularioProducto = ({obtenerProductos}) => {
 
       <Form.Group className="mb-3" controlId="formDisponible">
         <Form.Label>Disponible:</Form.Label>
-        <Form.Check type="switch" id="checkStock" {...register("disponible")}/>
+        <Form.Check type="switch" id="checkStock" {...register("disponible")} />
       </Form.Group>
-      
+
       <Button
         type="submit"
         className="btnPrincipal ms-auto mt-5"

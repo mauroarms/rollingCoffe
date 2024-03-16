@@ -7,9 +7,11 @@ import BarraNavegacion from "./components/common/BarraNavegacion";
 import Index from "./components/pages/Index";
 import Administrador from "./components/pages/Administrador";
 import Error404 from "./components/pages/Error404";
-import DetalleProducto from './components/pages/DetalleProducto';
-
+import DetalleProducto from "./components/pages/DetalleProducto";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import FormularioProducto from "./components/admin/FormularioProducto";
+import AgregarProducto from "./components/admin/AgregarProducto";
+import Login from "./components/pages/Login";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       <BarraNavegacion />
       <section className="contenidoPrincipal">
         <Routes>
+          <Route exact path="/login" element={<Login />}></Route>
 
           {/* //www.rollingCoffe.com/ */}
           <Route exact path="/" element={<Index />}></Route>
@@ -26,17 +29,29 @@ function App() {
           {/* //www.rollingCoffe.com/admin */}
           <Route exact path="/admin" element={<Administrador />}></Route>
 
+          {/* //www.rollingCoffe.com/admin */}
+          <Route
+            exact
+            path="/admin/agregar"
+            element={<AgregarProducto />}
+          ></Route>
+
+          {/* //www.rollingCoffe.com/admin */}
+          <Route
+            exact
+            path="/admin/editar"
+            element={<FormularioProducto />}
+          ></Route>
+
           {/* //www.rollingCoffe.com/producto */}
           <Route exact path="/producto" element={<DetalleProducto />}></Route>
 
           {/* //www.rollingCoffe.com/ */}
-          <Route path="*" element={<Error404/>}></Route>
-          
+          <Route path="*" element={<Error404 />}></Route>
         </Routes>
       </section>
       <Footer />
     </BrowserRouter>
-
   );
 }
 

@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import TablaAdministrador from "../admin/TablaAdministrador";
-import AgregarProducto from "../admin/AgregarProducto";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { obtenerListaProducto } from "../../helpers/queries";
 import Coffe_Logo from "../../assets/Coffee_Logo.png";
+import { Link } from "react-router-dom";
 
 const Administrador = () => {
   const [productos, setProductos] = useState([]);
@@ -41,7 +41,13 @@ const Administrador = () => {
           />
         </div>
         <hr />
-        <AgregarProducto obtenerProductos={obtenerProductos} ></AgregarProducto>
+
+        <div className="d-flex justify-content-center">
+          <Link className="btnPrincipal my-4 " to="/admin/agregar">
+            Agregar
+          </Link>
+        </div>
+
         <TablaAdministrador
           obtenerProductos={obtenerProductos}
           productos={productos}
