@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 
-const FormularioProducto = () => {
+const FormularioProducto = ({editar}) => {
   const {
     register,
     handleSubmit,
@@ -16,36 +16,42 @@ const FormularioProducto = () => {
   const history = useNavigate();
 
   const onSubmit = async (producto) => {
-    console.log(producto);
+    if(editar){
+      //lógica editar
+      console.log("Estamos editando")
+    }else{
+      console.log(producto);
 
-    //llamar funcion crear producto
-    const respuesta = await crearProductoAPI(producto);
-    console.log(respuesta);
-
-    if (respuesta.status === 201) {
-      Swal.fire({
-        title: `${producto.nombre} fue agregado correctamente`,
-        text: "¿Qué desea realizar?",
-        icon: "success",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Agregar otro Producto",
-        cancelButtonText: "Volver a Administración",
-      }).then(async (result) => {
-        if (result.isConfirmed) {
-          reset();
-        } else {
-          history('/admin');
-        }
-      });
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "El producto no fue agregado, intentelo nuevamente más tarde",
-      });
+      //llamar funcion crear producto
+      const respuesta = await crearProductoAPI(producto);
+      console.log(respuesta);
+  
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: `${producto.nombre} fue agregado correctamente`,
+          text: "¿Qué desea realizar?",
+          icon: "success",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Agregar otro Producto",
+          cancelButtonText: "Volver a Administración",
+        }).then(async (result) => {
+          if (result.isConfirmed) {
+            reset();
+          } else {
+            history('/admin');
+          }
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "El producto no fue agregado, intentelo nuevamente más tarde",
+        });
+      }
     }
+
   };
 
   return (
@@ -180,7 +186,7 @@ const FormularioProducto = () => {
         className="btnPrincipal ms-auto mt-5"
         variant="success"
       >
-        Enviar
+        {editar? "Editar" : "Guardar"}
       </Button>
     </Form>
   );

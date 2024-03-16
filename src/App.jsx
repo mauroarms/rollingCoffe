@@ -33,18 +33,18 @@ function App() {
           <Route
             exact
             path="/admin/agregar"
-            element={<AgregarProducto />}
+            element={<AgregarProducto  editar={false}/>}
           ></Route>
 
           {/* //www.rollingCoffe.com/admin */}
           <Route
             exact
-            path="/admin/editar"
-            element={<FormularioProducto />}
+            path="/admin/editar/:idProducto"
+            element={<AgregarProducto editar={true}></AgregarProducto>}
           ></Route>
 
           {/* //www.rollingCoffe.com/producto */}
-          <Route exact path="/producto" element={<DetalleProducto />}></Route>
+          <Route exact path="/producto" element={<DetalleProducto titulo={"Editar Producto"}/>}></Route>
 
           {/* //www.rollingCoffe.com/ */}
           <Route path="*" element={<Error404 />}></Route>

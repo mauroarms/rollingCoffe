@@ -6,6 +6,9 @@
 .contenidoPrincipal {
   flex-grow: 1;
 }
+.navbar{
+background-color: #f0f0f0;
+}
 footer {
   background-color: #003c25;
   height: 80px;

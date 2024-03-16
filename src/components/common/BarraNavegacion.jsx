@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const BarraNavegacion = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="navbar">
       <Container>
         <Navbar.Brand as={Link} to="/">
             <img src={Coffe_Logo} alt="logoRollingCoffee" className='img-fluid' width={160}/>

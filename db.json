@@ -1,16 +1,6 @@
 {
   "productos": [
     {
-      "id": "1",
-      "nombre": "Café Americano",
-      "imagen": "https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696",
-      "descripcionBreve": "cafecito",
-      "descripcionAmplia": "cafecito",
-      "precio": 1200,
-      "categoria": "Bebida caliente",
-      "disponible": true
-    },
-    {
       "id": "24c2",
       "nombre": "Frapuccino oreo",
       "imagen": "https://totallythebomb.com/wp-content/uploads/2020/05/shutterstock_186240506-735x1103.jpg",
@@ -128,6 +118,26 @@
       "descripcionAmplia": "Los muffins de zanahoria y nueces son una opción deliciosa y nutritiva que combina la dulzura natural de las zanahorias con el crujido de las nueces tostadas y una pizca de especias reconfortantes. Cada muffin esponjoso está cargado con zanahorias ralladas frescas que aportan humedad y dulzura natural, mientras que las nueces agregan un toque de sabor y textura irresistible. El aroma tentador de las especias como la canela y el jengibre completa la experiencia, creando un muffin lleno de sabor y satisfacción. Estos muffins son una opción ideal para un desayuno nutritivo en movimiento o una merienda saludable en cualquier momento del día. Además, son una excelente manera de incorporar más vegetales a la dieta diaria de una manera deliciosa y indulgente.",
       "categoria": "Panificacion",
       "precio": "500",
+      "disponible": true
+    },
+    {
+      "id": "2948",
+      "nombre": "Café Americano",
+      "imagen": "https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696",
+      "descripcionBreve": "Un café clásico",
+      "descripcionAmplia": "alfnlksfnlkafnlskafnsalfnklsfnalkfs",
+      "categoria": "Infusion",
+      "precio": "1500",
+      "disponible": true
+    },
+    {
+      "id": "7866",
+      "nombre": "Caramel Macchiato",
+      "imagen": "https://thelittlestcrumb.com/wp-content/uploads/salted-caramel-macchiato-featured-image-1.jpg",
+      "descripcionBreve": "asfasffafasfafs",
+      "descripcionAmplia": "asfasfsfasfasfasf",
+      "categoria": "Infusion",
+      "precio": "2500",
       "disponible": true
     }
   ],

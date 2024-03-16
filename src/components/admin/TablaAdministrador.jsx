@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { borrarProductoAPI } from "../../helpers/queries";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const TablaAdministrador = ({ obtenerProductos, productos }) => {
   const borrarProducto = (producto) => {
@@ -65,7 +66,7 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
               <img
                 src={producto.imagen}
                 alt=""
-                width={230}
+                width={250}
                 height={150}
                 className="m-auto"
               />
@@ -91,9 +92,9 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
             <td>
               <div className="d-flex flex-column mt-3 align-items-center">
                 {/* Editar fila */}
-                <Button className="btnPrincipal">
+                <Link className="btnPrincipal" to={`/admin/editar/${producto.id}`}>
                   <FontAwesomeIcon icon={faPenToSquare} />
-                </Button>
+                </Link>
 
                 {/* Borrar fila */}
                 <Button

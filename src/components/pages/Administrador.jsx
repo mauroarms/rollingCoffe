@@ -44,7 +44,7 @@ const Administrador = () => {
 
         <div className="d-flex justify-content-center">
           <Link className="btnPrincipal my-4 " to="/admin/agregar">
-            Agregar
+            Agregar Producto
           </Link>
         </div>
 
