@@ -7,7 +7,7 @@
       "descripcionAmplia": "El Frappuccino Oreo es una creación tentadora que combina lo mejor de un café helado con el sabor clásico de las galletas Oreo. Comienza con una base cremosa, que puede ser de café o de vainilla, según la preferencia del cliente. Luego, se agregan generosas porciones de galletas Oreo trituradas, que aportan un sabor dulce y una textura crujiente a la bebida. Todo se mezcla con hielo picado para crear una textura suave y refrescante. La bebida se sirve en un vaso frío y se corona con una generosa capa de crema batida y migajas adicionales de galleta Oreo, que añaden un toque extra de indulgencia y crujido. El Frappuccino Oreo es perfecto para satisfacer antojos de dulces y café al mismo tiempo, ofreciendo una experiencia deliciosa que deleitará a los amantes de las galletas Oreo y las bebidas heladas por igual.",
       "categoria": "Bebida Fría",
       "precio": "3500",
-      "disponible": true,
+      "disponible": false,
       "id": "24c2"
     },
     {

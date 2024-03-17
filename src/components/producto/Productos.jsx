@@ -25,7 +25,7 @@ const Productos = () => {
     }
   };
   return (
-    <section className="grillaProductos">
+    <section className="grillaProductos ">
       {productos.map((producto) => (
         <CardProducto
           key={producto.id}

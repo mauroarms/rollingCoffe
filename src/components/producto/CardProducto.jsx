@@ -17,7 +17,7 @@ const CardProducto = ({id, imagen, nombre, categoria, descripcionBreve, precio }
 
           <Card.Title className="tituloProducto mb-3 mt-1">{nombre}</Card.Title>
 
-          <Card.Text className="secDesc">
+          <Card.Text className="mb-4">
             {descripcionBreve}
           </Card.Text> 
         </div>
