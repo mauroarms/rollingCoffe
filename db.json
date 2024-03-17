@@ -140,14 +140,5 @@
       "disponible": true,
       "id": "7866"
     }
-  ],
-  "usuarios": [
-    {
-      "id": "1",
-      "mail": "mauro.armas14@gmail.com",
-      "pass": "mauro1234",
-      "user": "mauro_arms",
-      "type": "admin"
-    }
   ]
 }

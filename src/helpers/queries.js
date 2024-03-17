@@ -74,3 +74,17 @@ export const editarProductoAPI = async (producto, idProducto) =>{
     console.log(error)
   }
 }
+
+const userAdmin={
+  email: "mauro.armas14@gmail.com",
+  password: "Maurito626"
+}
+
+export const iniciarSesion = (usuario) => {
+  if((usuario.email === userAdmin.email) && (usuario.password === userAdmin.password)){
+    sessionStorage.setItem("loginRollingCoffe", JSON.stringify(userAdmin.email));
+    return true;
+  }else{
+    return false;
+  }
+}
