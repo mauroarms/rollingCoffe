@@ -44,7 +44,7 @@ function App() {
           ></Route>
 
           {/* //www.rollingCoffe.com/producto */}
-          <Route exact path="/producto" element={<DetalleProducto titulo={"Editar Producto"}/>}></Route>
+          <Route exact path="/producto/:idProducto" element={<DetalleProducto />}></Route>
 
           {/* //www.rollingCoffe.com/ */}
           <Route path="*" element={<Error404 />}></Route>

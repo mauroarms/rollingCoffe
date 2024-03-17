@@ -1,16 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import "../../css/detalleProducto.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Productos from "../producto/Productos";
+import { obtenerProductoPorIdAPI } from "../../helpers/queries";
 
 const Producto = () => {
+
+  const [nombre, setNombre] = useState();
+  const [imagen, setImagen] = useState();
+  const [descripcionAmplia, setdescripcionAmplia] = useState();
+  const [categoria, setCategoria] = useState();
+  const [precio, setPrecio] = useState();
+  const [disponible, setDisponible] = useState();
+
+  const {idProducto} = useParams();
+  useEffect(()=>{
+    
+    cargarProducto(idProducto);
+    
+  },[])
+
+  const cargarProducto = async (idBusqueda) =>{
+    console.log(idBusqueda)
+    const respuesta = await obtenerProductoPorIdAPI(idBusqueda)
+    if(respuesta.status === 200){
+      const productoEncontrado = await respuesta.json();
+
+      setNombre(productoEncontrado.nombre);
+      setImagen(productoEncontrado.imagen);
+
+      setdescripcionAmplia(productoEncontrado.descripcionAmplia);
+      setCategoria(productoEncontrado.categoria);
+      setPrecio(productoEncontrado.precio);
+      setDisponible(productoEncontrado.disponible);
+
+    }
+  } 
   return (
     <>
       <div className="position-relative">
         <div className="backgroundProducto">
           <img
-            src="https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696"
+            src={imagen}
             alt=""
           />
         </div>
@@ -18,27 +50,23 @@ const Producto = () => {
         <div className="contenidoProducto">
           <div className="image-section">
             <img
-              src="https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696"
+              src={imagen}
               alt=""
             />
           </div>
           <div className="content-section">
             <h6 className="mb-4">
-            Bebida caliente
+            {categoria}
             </h6>
-            <h1 className="display-6">Café Americano</h1>
+            <h1 className="display-6">{nombre}</h1>
 
             <div className="mt-0 mb-4">
                 
-                <p> Precio: $1200</p>              
+                <p> Precio: ${precio}</p>              
             </div>
             <div>
-                <strong>Descripción:</strong>
                 <p>
-                El café americano es una bebida hecha con agua
-                caliente y café expreso, proporcionando un sabor suave y
-                agradable.
-
+                {descripcionAmplia}
                 </p>
             </div>
 

@@ -1,9 +1,10 @@
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoAPI, obtenerProductoPorIdAPI } from "../../helpers/queries";
+import { crearProductoAPI, editarProductoAPI, obtenerProductoPorIdAPI } from "../../helpers/queries";
 import Swal from "sweetalert2";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
+
 
 const FormularioProducto = ({editar}) => {
   const {
@@ -39,8 +40,33 @@ const FormularioProducto = ({editar}) => {
   }
 
   const onSubmit = async (producto) => {
+
     if(editar){
-      //lógica editar
+      const respuesta = await editarProductoAPI(producto, idProducto);
+      if(respuesta.status === 200){
+        Swal.fire({
+          title: `${producto.nombre} fue modificado correctamente`,
+          text: "¿Qué desea realizar?",
+          icon: "success",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: `Seguir modificando ${producto.nombre}`,
+          cancelButtonText: "Volver a Administración",
+        }).then(async (result) => {
+          if (result.isConfirmed) {
+            
+          } else {
+            history('/admin');
+          }
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "El producto no fue agregado, intentelo nuevamente más tarde",
+        });
+      }
       console.log("Estamos editando")
     }else{
       console.log(producto);
@@ -156,12 +182,12 @@ const FormularioProducto = ({editar}) => {
             maxLength: {
               value: 1000,
               message:
-                "Ingrese una descripcion amplia con máximo 1000 caracteres",
+                `Ingrese una descripcion amplia con máximo 1000 caracteres `,
             },
           })}
         />
         <Form.Text className="text-danger">
-          {errors.descripcionAmplia?.message}
+        {errors.descripcionAmplia?.message}
         </Form.Text>
       </Form.Group>
 

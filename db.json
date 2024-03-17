@@ -1,54 +1,54 @@
 {
   "productos": [
     {
-      "id": "24c2",
       "nombre": "Frapuccino oreo",
       "imagen": "https://totallythebomb.com/wp-content/uploads/2020/05/shutterstock_186240506-735x1103.jpg",
-      "descripcionBreve": "Bebida fria a base de oreo y leche",
-      "descripcionAmplia": "Un gustito dulce hecho con intenso sabor a chocolate, un toque de café y trocitos de galletas OREO®. Se mezcla con hielo y cubre a mano con crema batida ligera y unos trocitos más de galletas OREO® para que no falten. Disponible en tamaños pequeño, mediano y grande.",
+      "descripcionBreve": "Una deliciosa bebida helada con una base de café o crema, mezclada con trozos de galletas Oreo, cubierta con crema batida y migajas de galleta, una opción indulgente para refrescarte.",
+      "descripcionAmplia": "El Frappuccino Oreo es una creación tentadora que combina lo mejor de un café helado con el sabor clásico de las galletas Oreo. Comienza con una base cremosa, que puede ser de café o de vainilla, según la preferencia del cliente. Luego, se agregan generosas porciones de galletas Oreo trituradas, que aportan un sabor dulce y una textura crujiente a la bebida. Todo se mezcla con hielo picado para crear una textura suave y refrescante. La bebida se sirve en un vaso frío y se corona con una generosa capa de crema batida y migajas adicionales de galleta Oreo, que añaden un toque extra de indulgencia y crujido. El Frappuccino Oreo es perfecto para satisfacer antojos de dulces y café al mismo tiempo, ofreciendo una experiencia deliciosa que deleitará a los amantes de las galletas Oreo y las bebidas heladas por igual.",
       "categoria": "Bebida Fría",
-      "precio": "5000",
-      "disponible": false
+      "precio": "3500",
+      "disponible": true,
+      "id": "24c2"
     },
     {
-      "id": "9d3f",
       "nombre": "Croissant",
       "imagen": "https://www.clarin.com/2020/07/17/qHfIs_gwt_1200x0__1.jpg",
-      "descripcionBreve": "ssfafsafasfafasfafsaf",
-      "descripcionAmplia": "El cruasán es una pieza de panadería de origen francés. Fue creada en París en el siglo XIX donde los panaderos locales se inspiraron de la forma del kifli austriaco popularizado por el panadero vienés",
+      "descripcionBreve": "Un croissant gourmet relleno con una mezcla de jamón serrano, queso brie derretido y espinacas frescas, horneado hasta obtener una capa dorada y crujiente, una delicia para los paladares más exigentes.",
+      "descripcionAmplia": "El Croissant Supreme eleva el clásico croissant a nuevas alturas de sabor y sofisticación. Este croissant gourmet comienza con una masa hojaldrada de alta calidad, meticulosamente laminada para obtener capas delicadas y crujientes. En su interior, se encuentra una exquisita combinación de sabores: lonchas de jamón serrano de primera calidad, queso brie derretido que se funde suavemente en cada bocado y espinacas frescas que añaden un toque de frescura y color. La mezcla se enrolla en la masa de croissant y se hornea hasta que adquiere una capa dorada y crujiente en el exterior, mientras que en el interior se funden los ingredientes, creando una armonía perfecta de sabores y texturas. El resultado es una experiencia gastronómica que deleitará a los paladares más exigentes, con un equilibrio entre lo salado y lo cremoso, lo crujiente y lo tierno. El Croissant Supreme es una opción ideal para disfrutar en el desayuno, brunch o como un exquisito tentempié durante todo el día.",
       "categoria": "Panificación",
-      "precio": "500",
-      "disponible": false
+      "precio": "750",
+      "disponible": true,
+      "id": "9d3f"
     },
     {
-      "id": "0876",
-      "nombre": "Avo toast",
+      "nombre": "Avo Toast",
       "imagen": "https://www.eatingwell.com/thmb/uVY_gqoovBnnh0ELyntL-vhKLIg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/EWL-267169-avocado-egg-toast-Hero-01-9385a3b6112b409b944e04d1cb6a9733.jpg",
-      "descripcionBreve": "asfafasfasfafssafsafas",
-      "descripcionAmplia": "asfafafasfafasfasfafssafsafasasfafasfasfafssafsafasasfafasfasfafssafsafasasfafasfasfafssafsafas",
+      "descripcionBreve": "Una tostada de pan integral cubierta con puré de palta cremoso, tomate fresco en rodajas y un toque de chile rojo, una opción saludable y deliciosa para el desayuno o el almuerzo.",
+      "descripcionAmplia": "El Avo Toast es una opción de desayuno o almuerzo cada vez más popular que combina la cremosidad del aguacate con la frescura del tomate y un toque de especias. Comienza con una rebanada de pan integral tostado, que proporciona una base crujiente y nutritiva. Luego, se extiende generosamente una capa de puré de aguacate maduro sobre el pan, creando una textura suave y cremosa. Encima del aguacate se colocan rodajas finas de tomate fresco, que aportan un sabor jugoso y una explosión de color. Para darle un toque de calor y sabor adicional, se espolvorea un poco de chile rojo picado o copos de pimienta roja. Este plato no solo es delicioso, sino también nutritivo, ya que el aguacate está lleno de grasas saludables, el tomate es rico en antioxidantes y el pan integral proporciona fibra y carbohidratos de liberación lenta para una energía duradera. ",
       "categoria": "Salado",
       "precio": "4500",
-      "disponible": false
+      "disponible": true,
+      "id": "0876"
     },
     {
-      "id": "8f94",
       "nombre": "Crumble de Manzana",
       "imagen": "https://e00-xlk-cooking-elmundo.uecdn.es/files/image_414_276/uploads/2023/02/28/63fe58f7c20c2.jpeg",
-      "descripcionBreve": "aafsasfasfasfassfa",
-      "descripcionAmplia": "safasfafasfasfafaasfasfafsafafasfasffasf",
+      "descripcionBreve": "Una exquisita combinación de manzanas frescas cortadas en trozos y cubiertas con una mezcla crujiente de harina, mantequilla, azúcar y canela, horneada hasta obtener una capa dorada y crujiente, una delicia reconfortante para cualquier ocasión.",
+      "descripcionAmplia": "El Crumble de Manzana es un postre clásico que combina la frescura y dulzura de las manzanas con la textura crujiente y aromática de la cobertura de crumble. Comienza con manzanas frescas peladas, descorazonadas y cortadas en trozos, que se espolvorean con azúcar y canela para realzar su sabor natural. Luego, se coloca esta mezcla de manzanas en un molde para hornear y se cubre con una generosa capa de crumble, hecha con harina, mantequilla fría, azúcar y canela, todo mezclado hasta obtener una textura arenosa y crujiente. El crumble se esparce uniformemente sobre las manzanas y se hornea hasta que adquiera un color dorado y una textura crujiente irresistible. Al sacarlo del horno, el aroma reconfortante de las manzanas cocidas y la mezcla de especias llenará la cocina, creando una tentación irresistible. El Crumble de Manzana se sirve caliente, acompañado de una bola de helado de vainilla o una generosa cucharada de crema batida.",
       "categoria": "Panificación",
-      "precio": "200",
-      "disponible": false
+      "precio": "1000",
+      "disponible": true,
+      "id": "8f94"
     },
     {
-      "id": "c340",
       "nombre": "Iced Vietnamesse",
       "imagen": "https://img.taste.com.au/UHFv39Ks/taste/2020/05/jun20_vietnamese-iced-coffee-161761-1.jpg",
-      "descripcionBreve": "Exótico y estimulante, el café Iced Vietn",
+      "descripcionBreve": "Una exquisita fusión de café vietnamita filtrado, leche condensada azucarada y hielo picado, adornado con un toque de elegancia y exotismo, perfecto para refrescar el paladar en días calurosos.",
       "descripcionAmplia": "El café Iced Vietnamese es una delicia refrescante que captura la esencia de la tradición cafetera de Vietnam. Preparado con café vietnamita robusto y molido finamente, este brebaje es filtrado lentamente a través de un phin, un filtro de goteo tradicional, que extrae su sabor distintivo y concentrado. Para equilibrar la intensidad del café, se agrega cuidadosamente leche condensada, que aporta una dulzura seductora y una textura cremosa incomparable. El toque final lo proporciona una generosa porción de hielo, que no solo enfría la bebida, sino que también realza su refrescante carácter. Cada sorbo de café Iced Vietnamese es una experiencia sensorial que evoca los vibrantes mercados callejeros de Vietnam, donde los aromas de café fresco y las risas llenan el aire. Con su combinación única de sabores y su refrescante perfil, esta bebida se convierte en una elección incomparable para aquellos que buscan una experiencia caféinada única y estimulante.",
       "categoria": "Infusión",
       "precio": "4500",
-      "disponible": true
+      "disponible": true,
+      "id": "c340"
     },
     {
       "id": "e3e9",
@@ -121,24 +121,24 @@
       "disponible": true
     },
     {
-      "id": "2948",
       "nombre": "Café Americano",
       "imagen": "https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696",
-      "descripcionBreve": "Un café clásico",
-      "descripcionAmplia": "alfnlksfnlkafnlskafnsalfnklsfnalkfs",
+      "descripcionBreve": "Una taza generosa de café espresso diluido con agua caliente, resultando en una bebida suave y equilibrada con un sabor robusto y notas sutiles de tostado, ideal para los amantes del café sin pretensiones.",
+      "descripcionAmplia": "El Café Americano es una interpretación clásica y reconfortante del café que ofrece una experiencia sencilla pero satisfactoria. Se elabora con un solo o doble espresso recién preparado, al que se le añade agua caliente para diluirlo y crear una bebida más suave y voluminosa. Esta mezcla equilibrada de espresso y agua caliente resulta en una taza de café con un sabor rico y profundo, pero sin la intensidad abrumadora del espresso puro. El Café Americano es apreciado por su versatilidad y simplicidad, permitiendo a los amantes del café disfrutar de una bebida satisfactoria sin complicaciones ni adornos innecesarios. Ya sea disfrutado solo o acompañado de un toque de crema o azúcar según las preferencias individuales, el Café Americano es una opción reconfortante que proporciona un impulso de energía y una dosis de sabor robusto para empezar el día con buen pie o disfrutar de un descanso a cualquier hora.",
       "categoria": "Infusión",
       "precio": "1500",
-      "disponible": true
+      "disponible": true,
+      "id": "2948"
     },
     {
-      "id": "7866",
       "nombre": "Caramel Macchiato",
       "imagen": "https://thelittlestcrumb.com/wp-content/uploads/salted-caramel-macchiato-featured-image-1.jpg",
-      "descripcionBreve": "asfasffafasfafs",
-      "descripcionAmplia": "asfasfsfasfasfasf",
+      "descripcionBreve": "Una mezcla equilibrada de espresso recién hecho, leche espumada y un toque de caramelo, adornada con un elegante diseño de caramelo, una indulgencia sofisticada para los amantes del café.",
+      "descripcionAmplia": "El Caramel Macchiato es una obra maestra de la cafeína que combina la intensidad del espresso con la suavidad de la leche espumada y el dulzor del caramelo. Comienza con un espresso recién hecho, que se vierte cuidadosamente sobre una capa de leche espumada en un vaso alto. Esta combinación de espresso y leche se mezcla suavemente para crear un equilibrio perfecto entre el rico sabor del café y la cremosidad de la leche. Luego, se agrega un toque de jarabe de caramelo, que se desliza elegantemente por la superficie del café, añadiendo un dulzor seductor y un aroma irresistible. La bebida se sirve adornada con un diseño artístico de caramelo en la parte superior, que añade un toque de elegancia y sofisticación visual. Cada sorbo de este Caramel Macchiato es una experiencia sensorial que despierta los sentidos con su rico aroma, su suave textura y su delicioso sabor a caramelo. ",
       "categoria": "Infusión",
-      "precio": "2500",
-      "disponible": true
+      "precio": "3000",
+      "disponible": true,
+      "id": "7866"
     }
   ],
   "usuarios": [

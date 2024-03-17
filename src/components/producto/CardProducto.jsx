@@ -1,10 +1,11 @@
-import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../../css/cardProducto.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 
-const CardProducto = ({ imagen, nombre, categoria, descripcionBreve, precio }) => {
+const CardProducto = ({id, imagen, nombre, categoria, descripcionBreve, precio }) => {
+
+  const rutaAcceso = "/producto/" + id;
   return (
     <Card className="cardProducto">
       <Card.Img className="imgCard" variant="top" src={imagen} />
@@ -32,7 +33,7 @@ const CardProducto = ({ imagen, nombre, categoria, descripcionBreve, precio }) =
             className="btnPrincipal ms-auto my-auto"
             variant="success"
             as={Link}
-            to="/producto"
+            to={rutaAcceso}
           >
             Ver
           </Button>

@@ -35,7 +35,7 @@ export const obtenerListaProducto = async () => {
 export const borrarProductoAPI = async (idProducto) => {
   try {
     const respuesta = await fetch(`${URI_Producto}/${idProducto}`, {
-      method: "DELETE",
+      method: "DELETE"
     });
     console.log(respuesta)
     return respuesta
@@ -56,3 +56,21 @@ export const obtenerProductoPorIdAPI = async (idProducto) => {
     console.log(error);
   }
 };
+
+//PUT
+
+export const editarProductoAPI = async (producto, idProducto) =>{
+  try{
+    const respuesta = await fetch(`${URI_Producto}/${idProducto}`,{
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(producto)
+    });
+    console.log(respuesta);
+    return respuesta
+  }catch(error){
+    console.log(error)
+  }
+}
