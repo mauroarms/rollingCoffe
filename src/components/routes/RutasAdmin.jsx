@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import Administrador from "../pages/Administrador";
-import AgregarProducto from "../admin/AgregarProducto";
+import FormularioProducto from "../admin/FormularioProducto";
 
 const RutasAdmin = () => {
   return (
@@ -12,14 +12,14 @@ const RutasAdmin = () => {
         <Route
           exact
           path="/agregar"
-          element={<AgregarProducto editar={false} />}
+          element={<FormularioProducto editar={false} />}
         ></Route>
 
         {/* //www.rollingCoffe.com/admin */}
         <Route
           exact
           path="/editar/:idProducto"
-          element={<AgregarProducto editar={true}></AgregarProducto>}
+          element={<FormularioProducto editar={true}></FormularioProducto>}
         ></Route>
       </Routes>
     </>

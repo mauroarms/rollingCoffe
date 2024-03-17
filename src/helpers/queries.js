@@ -76,8 +76,8 @@ export const editarProductoAPI = async (producto, idProducto) =>{
 }
 
 const userAdmin={
-  email: "mauro.armas14@gmail.com",
-  password: "Maurito626"
+  email: "mauro@gmail.com",
+  password: "Maurito123"
 }
 
 export const iniciarSesion = (usuario) => {
