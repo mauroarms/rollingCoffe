@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Container, Badge } from "react-bootstrap";
 import "../../css/detalleProducto.css";
 import { Link, useParams } from "react-router-dom";
@@ -97,10 +97,10 @@ const Producto = () => {
         </Container>
       </section>
 
-      <Container>
+      <Container className="mb-5">
         <h1 className="mt-5 display-5">También te podría gustar...</h1>
         <hr />
-        <Productos></Productos>
+        <Productos ></Productos>
       </Container>
     </>
   );
