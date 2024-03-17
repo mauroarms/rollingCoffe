@@ -51,14 +51,14 @@
       "id": "c340"
     },
     {
-      "id": "e3e9",
       "nombre": "Croissant de almendra",
       "imagen": "https://www.nanette.com.ar/wp-content/uploads/2020/06/croissantdealmendras.jpg",
       "descripcionBreve": "Delicado croissant horneado hasta la perfección y relleno con una mezcla suave de almendra dulce, ofreciendo un sabor y una textura irresistibles.",
       "descripcionAmplia": "El croissant de almendra es una exquisitez de la repostería que combina la ligereza y la delicadeza de un croissant francés con el dulzor y la textura cremosa de la almendra. Elaborado con una masa hojaldrada que se deshace en la boca con cada bocado, este croissant se rellena generosamente con una mezcla suave y cremosa de almendras molidas y azúcar, que se caramelizan ligeramente durante el horneado para crear una capa exterior crujiente y dorada. Cada mordisco revela un equilibrio perfecto entre la mantequilla y la dulzura de la almendra, mientras que el contraste entre la capa exterior crujiente y el interior tierno y esponjoso deleita los sentidos. Ya sea acompañado de un café recién hecho o disfrutado como un tentempié por sí solo, el croissant de almendra es una indulgencia irresistible que eleva cualquier experiencia en la cafetería.",
       "categoria": "Panificación",
       "precio": "3200",
-      "disponible": true
+      "disponible": false,
+      "id": "e3e9"
     },
     {
       "id": "1a22",

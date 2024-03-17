@@ -3,7 +3,8 @@
   height: 570px;
 }
 .imgCard {
-  height: 270px;
+  min-height: 270px;
+  max-height: 270px;
 }
 .tituloProducto {
   color: #003c25;

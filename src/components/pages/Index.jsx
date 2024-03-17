@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 import Productos from "../producto/Productos";
 
-
 const Index = () => {
   return (
     <div className="mb-5">

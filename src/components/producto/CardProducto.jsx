@@ -43,6 +43,4 @@ const CardProducto = ({id, imagen, nombre, categoria, descripcionBreve, precio }
   );
 };
 
-//   margin: auto 0 10px auto;
-
 export default CardProducto;
