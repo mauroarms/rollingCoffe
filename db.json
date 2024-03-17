@@ -13,7 +13,7 @@
     {
       "nombre": "Croissant",
       "imagen": "https://www.clarin.com/2020/07/17/qHfIs_gwt_1200x0__1.jpg",
-      "descripcionBreve": "Un croissant gourmet relleno con una mezcla de jamón serrano, queso brie derretido y espinacas frescas, horneado hasta obtener una capa dorada y crujiente, una delicia para los paladares más exigentes.",
+      "descripcionBreve": "Un croissant gourmet relleno con una mezcla de jamón serrano, queso brie derretido y espinacas frescas, horneado hasta obtener una capa dorada y crujiente, una delicia para los paladares más.",
       "descripcionAmplia": "El Croissant Supreme eleva el clásico croissant a nuevas alturas de sabor y sofisticación. Este croissant gourmet comienza con una masa hojaldrada de alta calidad, meticulosamente laminada para obtener capas delicadas y crujientes. En su interior, se encuentra una exquisita combinación de sabores: lonchas de jamón serrano de primera calidad, queso brie derretido que se funde suavemente en cada bocado y espinacas frescas que añaden un toque de frescura y color. La mezcla se enrolla en la masa de croissant y se hornea hasta que adquiere una capa dorada y crujiente en el exterior, mientras que en el interior se funden los ingredientes, creando una armonía perfecta de sabores y texturas. El resultado es una experiencia gastronómica que deleitará a los paladares más exigentes, con un equilibrio entre lo salado y lo cremoso, lo crujiente y lo tierno. El Croissant Supreme es una opción ideal para disfrutar en el desayuno, brunch o como un exquisito tentempié durante todo el día.",
       "categoria": "Panificación",
       "precio": "750",
@@ -33,7 +33,7 @@
     {
       "nombre": "Crumble de Manzana",
       "imagen": "https://e00-xlk-cooking-elmundo.uecdn.es/files/image_414_276/uploads/2023/02/28/63fe58f7c20c2.jpeg",
-      "descripcionBreve": "Una exquisita combinación de manzanas frescas cortadas en trozos y cubiertas con una mezcla crujiente de harina, mantequilla, azúcar y canela, horneada hasta obtener una capa dorada y crujiente, una delicia reconfortante para cualquier ocasión.",
+      "descripcionBreve": "Una exquisita combinación de manzanas frescas cortadas en trozos y cubiertas con una mezcla crujiente de harina, mantequilla, azúcar y canela, horneada hasta obtener una capa dorada",
       "descripcionAmplia": "El Crumble de Manzana es un postre clásico que combina la frescura y dulzura de las manzanas con la textura crujiente y aromática de la cobertura de crumble. Comienza con manzanas frescas peladas, descorazonadas y cortadas en trozos, que se espolvorean con azúcar y canela para realzar su sabor natural. Luego, se coloca esta mezcla de manzanas en un molde para hornear y se cubre con una generosa capa de crumble, hecha con harina, mantequilla fría, azúcar y canela, todo mezclado hasta obtener una textura arenosa y crujiente. El crumble se esparce uniformemente sobre las manzanas y se hornea hasta que adquiera un color dorado y una textura crujiente irresistible. Al sacarlo del horno, el aroma reconfortante de las manzanas cocidas y la mezcla de especias llenará la cocina, creando una tentación irresistible. El Crumble de Manzana se sirve caliente, acompañado de una bola de helado de vainilla o una generosa cucharada de crema batida.",
       "categoria": "Panificación",
       "precio": "1000",
@@ -123,7 +123,7 @@
     {
       "nombre": "Café Americano",
       "imagen": "https://www.elglobo.com.mx/cdn/shop/products/americano-3_800x.jpg?v=1618806696",
-      "descripcionBreve": "Una taza generosa de café espresso diluido con agua caliente, resultando en una bebida suave y equilibrada con un sabor robusto y notas sutiles de tostado, ideal para los amantes del café sin pretensiones.",
+      "descripcionBreve": "Una taza generosa de café espresso diluido con agua caliente, resultando en una bebida suave y equilibrada con un sabor robusto y notas sutiles de tostado, ideal para los amantes del café sin pretddaa",
       "descripcionAmplia": "El Café Americano es una interpretación clásica y reconfortante del café que ofrece una experiencia sencilla pero satisfactoria. Se elabora con un solo o doble espresso recién preparado, al que se le añade agua caliente para diluirlo y crear una bebida más suave y voluminosa. Esta mezcla equilibrada de espresso y agua caliente resulta en una taza de café con un sabor rico y profundo, pero sin la intensidad abrumadora del espresso puro. El Café Americano es apreciado por su versatilidad y simplicidad, permitiendo a los amantes del café disfrutar de una bebida satisfactoria sin complicaciones ni adornos innecesarios. Ya sea disfrutado solo o acompañado de un toque de crema o azúcar según las preferencias individuales, el Café Americano es una opción reconfortante que proporciona un impulso de energía y una dosis de sabor robusto para empezar el día con buen pie o disfrutar de un descanso a cualquier hora.",
       "categoria": "Infusión",
       "precio": "1500",

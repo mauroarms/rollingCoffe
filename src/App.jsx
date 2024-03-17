@@ -9,25 +9,40 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/pages/Login";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import RutasAdmin from "./components/routes/RutasAdmin";
-
+import { useState } from "react";
 
 function App() {
+  const usuario = JSON.parse(sessionStorage.getItem("loginRollingCoffe")) || "";
+
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
+
   return (
     //Administrador de rutas.. contiene todas las rutas del programa
 
     <BrowserRouter>
-      <BarraNavegacion />
+      <BarraNavegacion
+        usuarioLogueado={usuarioLogueado}
+        setUsuarioLogueado={setUsuarioLogueado}
+      />
       <section className="contenidoPrincipal">
         <Routes>
-          <Route exact path="/login" element={<Login />}></Route>
+          <Route
+            exact
+            path="/login"
+            element={<Login setUsuarioLogueado={setUsuarioLogueado} />}
+          ></Route>
 
           <Route exact path="/" element={<Index />}></Route>
 
-          <Route exact path="/admin/*" element={    
-            <RutasProtegidas>
+          <Route
+            exact
+            path="/admin/*"
+            element={
+              <RutasProtegidas>
                 <RutasAdmin></RutasAdmin>
-            </RutasProtegidas>}>
-          </Route>
+              </RutasProtegidas>
+            }
+          ></Route>
 
           <Route
             exact

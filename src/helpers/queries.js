@@ -80,7 +80,7 @@ const userAdmin={
   password: "Maurito123"
 }
 
-export const iniciarSesion = (usuario) => {
+export const verificarInicioSesion = (usuario) => {
   if((usuario.email === userAdmin.email) && (usuario.password === userAdmin.password)){
     sessionStorage.setItem("loginRollingCoffe", JSON.stringify(userAdmin.email));
     return true;

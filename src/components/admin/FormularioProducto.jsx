@@ -163,7 +163,7 @@ const FormularioProducto = ({ editar }) => {
                 message:
                   "Ingrese una descripcion breve con mínimo 5 caracteres",
               },
-              maxLenght: {
+              maxLength: {
                 value: 200,
                 message:
                   "Ingrese una descripcion breve con máximo 200 caracteres",

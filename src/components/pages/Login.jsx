@@ -2,32 +2,31 @@ import "../../css/login.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
-import { iniciarSesion } from "../../helpers/queries";
+import { verificarInicioSesion } from "../../helpers/queries";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 
-const Login = () => {
+const Login = ({setUsuarioLogueado}) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-    reset,
+    formState: { errors }
   } = useForm();
 
   const navegacion = useNavigate()
 
   const onSubmit = (usuario) =>{
       console.log(usuario)
-      const inicio = iniciarSesion(usuario)
+      const inicio = verificarInicioSesion(usuario)
 
       if(inicio){
         console.log("Usuario ingresado")
-        reset();
         Swal.fire({
           icon: "success",
           title: "Inicio de Sesión Exitoso",
           text: `Bienvenido ${usuario.email}`,
         });
+        setUsuarioLogueado(usuario.email)
         navegacion("/admin")
       }else{ 
         Swal.fire({
