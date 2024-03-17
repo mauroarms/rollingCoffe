@@ -81,14 +81,14 @@
       "disponible": true
     },
     {
-      "id": "86bf",
       "nombre": "Brownie",
       "imagen": "https://laopinionaustral.com.ar/media/uploads/2023/10/receta-de-brownie-casero.jpg",
       "descripcionBreve": "Un dulce tentador, el brownie es un pastel denso y rico, hecho con chocolate y nueces, perfecto para satisfacer antojos de postre.",
       "descripcionAmplia": "El brownie es un clásico postre que deleita a los amantes del chocolate en todo el mundo. Con una textura densa y húmeda, este pastel se elabora con una mezcla indulgente de chocolate, mantequilla, azúcar, huevos y harina, junto con trozos de nueces o chispas de chocolate para añadir un extra de sabor y textura. Su aroma tentador llena la cocina mientras se hornea, y su aspecto apetitoso hace que sea difícil resistirse a un bocado. Cada mordisco de brownie ofrece una explosión de sabor a chocolate, complementado por la dulzura reconfortante del azúcar y la cremosidad de la mantequilla. Se puede disfrutar solo, acompañado de una bola de helado de vainilla o cubierto con una generosa capa de ganache de chocolate para una experiencia aún más decadente. Ya sea como un postre indulgente después de una comida o como un capricho reconfortante en cualquier momento del día, el brownie es una delicia clásica que nunca pasa de moda.",
       "categoria": "Panificación",
-      "precio": "500",
-      "disponible": true
+      "precio": "1000",
+      "disponible": false,
+      "id": "86bf"
     },
     {
       "id": "26bf",
