@@ -48,7 +48,7 @@ const Producto = () => {
           </div>
           <div className="content-section">
             <h6 className="mb-4">{categoria}</h6>
-            <h1 className="display-6">{nombre} </h1>
+            <h1 className="display-5 mb-2">{nombre} </h1>
 
             <div className="mt-0 mb-4">
               <p>
