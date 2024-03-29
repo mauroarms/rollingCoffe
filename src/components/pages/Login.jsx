@@ -6,40 +6,46 @@ import { verificarInicioSesion } from "../../helpers/queries";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 
-const Login = ({setUsuarioLogueado}) => {
+const Login = ({ setUsuarioLogueado }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm();
 
-  const navegacion = useNavigate()
+  const navegacion = useNavigate();
 
-  const onSubmit = (usuario) =>{
-      console.log(usuario)
-      const inicio = verificarInicioSesion(usuario)
+  const onSubmit = async (usuario) => {
+    
+    const inicio = await verificarInicioSesion(usuario);
 
-      if(inicio){
-        console.log("Usuario ingresado")
-        Swal.fire({
-          icon: "success",
-          title: "Inicio de Sesión Exitoso",
-          text: `Bienvenido ${usuario.email}`,
-        });
-        setUsuarioLogueado(usuario.email)
-        navegacion("/admin")
-      }else{ 
-        Swal.fire({
-          icon: "error",
-          title: "Error",
-          text: `Email o Contraseña incorrecto`,
-        });
-      }
+    if (inicio.status === 200) {
       
-  }
+      Swal.fire({
+        icon: "success",
+        title: "Inicio de Sesión Exitoso",
+        text: `Bienvenido ${usuario.email}`,
+      });
+
+      const datos = await inicio.json();
+      sessionStorage.setItem(
+        "loginRollingCoffe",
+        JSON.stringify({email: datos.email , token: datos.token})
+      )
+
+      setUsuarioLogueado(usuario.email);
+      navegacion("/admin");
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: `Email o Contraseña incorrecto`,
+      });
+    }
+  };
 
   return (
-
+    
     <>
       <div className="contenedorLogin">
         <img
@@ -62,7 +68,6 @@ const Login = ({setUsuarioLogueado}) => {
                 },
               })}
             />
-
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -70,7 +75,7 @@ const Login = ({setUsuarioLogueado}) => {
             <Form.Control
               type="password"
               placeholder="Ingrese su contraseña"
-              {...register("password", {
+              {...register("pass", {
                 required: "Ingrese su contraseña",
                 pattern: {
                   value: /^(?=.*[A-Z])(?=.*\d).{8,}$/,
@@ -78,7 +83,6 @@ const Login = ({setUsuarioLogueado}) => {
                 },
               })}
             />
-
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Recordarme" />

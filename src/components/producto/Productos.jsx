@@ -28,8 +28,8 @@ const Productos = () => {
     <section className="grillaProductos ">
       {productos.map((producto) => (
         <CardProducto
-          key={producto.id}
-          id={producto.id}
+          key={producto._id}
+          id={producto._id}
           imagen={producto.imagen}
           nombre={producto.nombre}
           categoria={producto.categoria}

@@ -12,7 +12,7 @@ import RutasAdmin from "./components/routes/RutasAdmin";
 import { useState } from "react";
 
 function App() {
-  const usuario = JSON.parse(sessionStorage.getItem("loginRollingCoffe")) || "";
+  const usuario = JSON.parse(sessionStorage.getItem("loginRollingCoffe")) || {};
 
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
 

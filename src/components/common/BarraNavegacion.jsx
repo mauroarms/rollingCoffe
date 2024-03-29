@@ -48,7 +48,7 @@ const BarraNavegacion = ({ usuarioLogueado , setUsuarioLogueado}) => {
                 <NavLink end to="/login" className="nav-link">
                   Iniciar Sesión
                 </NavLink>
-                <NavLink end to="/registro" className="nav-link">
+                <NavLink end to="/register" className="nav-link">
                   Registrarme
                 </NavLink>
               </>

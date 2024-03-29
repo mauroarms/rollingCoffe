@@ -24,7 +24,7 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
       cancelButtonText: "Cancelar",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        const respuesta = await borrarProductoAPI(producto.id);
+        const respuesta = await borrarProductoAPI(producto._id);
         if (respuesta.status === 200) {
           Swal.fire({
             title: `Se borró "${producto.nombre}" de la lista de productos`,
@@ -47,7 +47,6 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
     <Table striped bordered hover responsive>
       <thead>
         <tr className="text-center">
-          <th>Código</th>
           <th>Producto</th>
           <th>Precio</th>
           <th>URL de Imagen</th>
@@ -58,8 +57,7 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
       </thead>
       <tbody>
         {productos.map((producto) => (
-          <tr key={producto.id}>
-            <td>{producto.id}</td>
+          <tr key={producto._id}>
             <td>{producto.nombre}</td>
             <td>${producto.precio}</td>
             <td className="d-flex">
@@ -92,7 +90,7 @@ const TablaAdministrador = ({ obtenerProductos, productos }) => {
             <td>
               <div className="d-flex flex-column mt-3 align-items-center">
                 {/* Editar fila */}
-                <Link className="btnPrincipal" to={`/admin/editar/${producto.id}`}>
+                <Link className="btnPrincipal" to={`/admin/editar/${producto._id}`}>
                   <FontAwesomeIcon icon={faPenToSquare} />
                 </Link>
 

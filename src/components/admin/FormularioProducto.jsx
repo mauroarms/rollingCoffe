@@ -122,8 +122,8 @@ const FormularioProducto = ({ editar }) => {
                 message: "Ingrese un nombre con mínimo 2 caracteres",
               },
               maxLength: {
-                value: 30,
-                message: "Ingrese un nombre con máximo 30 caracteres",
+                value: 50,
+                message: "Ingrese un nombre con máximo 50 caracteres",
               },
             })}
           />

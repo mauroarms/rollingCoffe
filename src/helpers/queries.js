@@ -1,5 +1,5 @@
 const URI_Producto = import.meta.env.VITE_API_PRODUCTOS;
-
+const URL_Usuario = import.meta.env.VITE_API_USUARIO
 //POST (agregar a la API)
 
 export const crearProductoAPI = async (producto) => {
@@ -9,6 +9,7 @@ export const crearProductoAPI = async (producto) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        'x-token': JSON.parse(sessionStorage.getItem('usuarioRollingCoffe')).token
       },
       body: JSON.stringify(producto),
     });
@@ -35,8 +36,12 @@ export const obtenerListaProducto = async () => {
 export const borrarProductoAPI = async (idProducto) => {
   try {
     const respuesta = await fetch(`${URI_Producto}/${idProducto}`, {
-      method: "DELETE"
+      method: "DELETE",
+      headers: {
+        'x-token': JSON.parse(sessionStorage.getItem('usuarioRollingCoffe')).token
+      }
     });
+
     console.log(respuesta)
     return respuesta
   } catch (error) {
@@ -65,6 +70,7 @@ export const editarProductoAPI = async (producto, idProducto) =>{
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
+        'x-token': JSON.parse(sessionStorage.getItem('usuarioRollingCoffe')).token
       },
       body: JSON.stringify(producto)
     });
@@ -75,16 +81,18 @@ export const editarProductoAPI = async (producto, idProducto) =>{
   }
 }
 
-const userAdmin={
-  email: "mauro@gmail.com",
-  password: "Maurito123"
-}
-
-export const verificarInicioSesion = (usuario) => {
-  if((usuario.email === userAdmin.email) && (usuario.password === userAdmin.password)){
-    sessionStorage.setItem("loginRollingCoffe", JSON.stringify(userAdmin.email));
-    return true;
-  }else{
-    return false;
+export const verificarInicioSesion = async (usuario) =>{
+  try{
+    const respuesta = await fetch(`${URL_Usuario}`,{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(usuario)
+    });
+    console.log(respuesta);
+    return respuesta
+  }catch(error){
+    console.log(error)
   }
 }
